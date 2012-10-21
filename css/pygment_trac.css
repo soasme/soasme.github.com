@@ -67,3 +67,9 @@
 .type-csharp .highlight .nn { color: #000000 }
 .type-csharp .highlight .s { color: #A31515 }
 .type-csharp .highlight .sc { color: #A31515 }
+
+.post_info {list-style: none}
+.post_info  li::after { float: left; width: 0; white-space: nowrap; content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . " ; }
+.post_info  li span:first-child { padding-right: 0.33em; background: white; display: inline-block; }
+.post_info li  span + span { display: block; float: right; padding-left: 0.13em; background: white; position: relative; z-index: 1; }
+.post_info li a { font-size: 17px; font-weight: normal; font-style: italic; color: #104E8B;}
