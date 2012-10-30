@@ -1,5 +1,6 @@
 ---
-layout:post
+
+layout: post
 ---
 
 修复vim在git提交时的报错
