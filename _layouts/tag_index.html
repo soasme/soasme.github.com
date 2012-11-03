@@ -1,0 +1,35 @@
+---
+layout: post
+title: Tags
+---
+
+<div class="container">
+  <div class="bd">
+    <div class="main">
+      <article class="col col13">
+        <h2 class="post_title">{{page.title}}</h2>
+        <ul class="list-lined">
+          {% for post in site.posts %}
+            {% for tag in post.tags %}
+              {% if tag == page.tag %}
+                <li class="post-list">
+                  <a href="{{ site.baseurl }}{{ post.url }}" class="post-title">
+                    {{ post.title }}
+                  </a>
+                  by {{ post.author }} {{ post.date | date: "%d %B %Y" }}
+                  <ul class="tags post-tags">
+                    {% for tag in post.tags %}
+                      <li><a href="{{ site.baseurl }}tag/{{ tag }}">{{ tag }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </article>
+    </div>
+  </div>
+</div>
+
+

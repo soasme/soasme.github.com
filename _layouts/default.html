@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Lin Ju's Posts Gallery</title>
+    <title>{{ title }} - Lin Ju's Posts Gallery</title>
 
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/pygment_trac.css">
@@ -20,9 +20,11 @@
     <div class="wrapper">
       <header>
         <h1><a href="/">#Lin Ju's Posts Gallery</a></h1>
-        <p class="nav"><a href="/archive">Archives</a></p>
-        <p class="nav"><a href="http://github.com/soasme">Github</a></p>
-        <p class="nav"><a href="/about.html">About</a></p>
+        <ul>
+            <li><a href="/archive">Archive</a></li>
+            <li><a href="http://github.com/soasme">Github</a></li>
+            <li><a href="/about.html">About</a></li>
+        </ul>
       </header>
       <section>
         {{ content }}

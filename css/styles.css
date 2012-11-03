@@ -112,7 +112,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:20%;
   float:left;
   position:fixed;
 }
@@ -153,7 +153,7 @@ header li:last-child a {
 }
 
 header ul a {
-  line-height:1;
+  line-height:40px;
   font-size:11px;
   color:#999;
   display:block;
@@ -200,7 +200,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:60%;
   float:right;
   padding-bottom:50px;
 }
