@@ -4,6 +4,11 @@ layout: default
 <div id="post">
   {{ content }}
 </div>
+<div id="tags">
+    {% for tag in post.tags %}
+    {{ tag }}
+    {% endfor %}
+</div>
 <div id="share" style="clear: bot; height: 25px;">
 <!-- JiaThis Button BEGIN -->
 <style type="text/css">
