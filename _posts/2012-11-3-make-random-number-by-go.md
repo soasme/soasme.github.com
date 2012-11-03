@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: go programe
+tags: go
 ---
 
 使用Golang生成随机数
