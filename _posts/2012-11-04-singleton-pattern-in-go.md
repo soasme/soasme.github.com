@@ -35,7 +35,6 @@ tags: go
     func GetSingletonInstance() Singleton {
         if theSingleton == nil {
             theSingleton = new(singleton)
-            theSingleton.Val = 1
         }
         return theSingleton
     }
