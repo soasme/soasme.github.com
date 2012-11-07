@@ -12,11 +12,8 @@ tags: go
 
 [国外一篇论文](http://cxwangyi.wordpress.com/2012/01/01/%E7%94%A8go%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0design-patterns/) 中介绍了这样的方法:
 
-预备知识:
+预备知识: 空接口 `type Any interface{}` 可以做出别的语言所谓的 `Any` 类型, 变量或类型小写将被作为包的私有类型, 外部无法获得
 
-- 小写的变量或类型将被作为包的私有类型, 外部无法获得
-
-- type Any interface{} 这样的空接口可以做出别的语言所谓的 `Any` 类型
 
 
     package main
