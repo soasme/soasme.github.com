@@ -1,5 +1,7 @@
 ---
 layout: post
+category: technology
+tags: [vim, git]
 ---
 
 修复vim在git提交时的报错

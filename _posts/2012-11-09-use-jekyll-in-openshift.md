@@ -1,6 +1,7 @@
 ---
 layout: post
-tags: openshift, jekyll
+category: technology
+tags: [openshift, jekyll]
 ---
 
 在OpenShift上使用Jekyll

@@ -1,6 +1,7 @@
 ---
 layout: post
-tags: mp3, mad, c
+category: technology
+tags: [audio, c]
 ---
 
 安装libmad

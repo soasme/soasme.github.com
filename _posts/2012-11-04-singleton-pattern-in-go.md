@@ -1,6 +1,7 @@
 ---
 layout: post
-tags: go
+category: technology
+tags: [go, pattern]
 ---
 
 在Go语言中使用单例模式
