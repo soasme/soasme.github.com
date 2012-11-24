@@ -28,14 +28,14 @@
         <div class="categories">
             <h4>Category</h4>
             {% for category in site.categories %}
-                <a href="/categories/{{ category | first }}/" title="view all 6posts">{{ category | first }} ({{ category | last | size }})</a>
+                <a href="/categories/{{ category | first }}/" title="view all posts">{{ category | first }} ({{ category | last | size }})</a>
             &nbsp; &nbsp; &nbsp;
             {% endfor %}
         </div>
         <div class="tags">
             <h4>Tags</h4>
             {% for tag in site.tags %}
-                <a href="/tag/{{ tag | first }}/" title="view all 6posts">{{ tag | first }} ({{ tag | last | size }})</a>
+                <a href="/tag/{{ tag | first }}/" title="view all posts">{{ tag | first }} ({{ tag | last | size }})</a>
                 &nbsp; &nbsp; &nbsp;
             {% endfor %}
       </header>
@@ -43,19 +43,10 @@
         {{ content }}
       </section>
       <footer>
-        <p>
-        <!--<ul>-->
-          <!--<li><a href="http://github.com/soasme">Github</a></li>-->
-          <!--<li><a href="http://twitter.com/soasme">Twitter</a></li>-->
-          <!--<li><a href="http://facebook.com/soasme">Facebook</a></li>-->
-          <!--<li><a href="http://http://coderwall.com/soasme">Coderwall</a></li>-->
-        <!--</ul>-->
-        </p>
         <p><small>This blog is powered by <a href="http://github.com/mojombo/jekyll">jekyll</a>.</small></p>
         <p>&copy 2012 Lin Ju
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-36183732-1']);
