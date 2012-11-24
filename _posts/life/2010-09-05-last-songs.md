@@ -1,4 +1,11 @@
+---
+layout: post
+category: life
+tag: diary
+---
 
+最近的歌手
+===
 
 2012-05-31【Goodbye Lullaby】
 
