@@ -7,3 +7,8 @@ site:
 	git add categories
 	git add tag
 	@echo 'Success to build site'
+
+commit_post:
+	git commit -m 'add new post'
+
+commit: site commit_post
