@@ -1,7 +1,7 @@
 ---
 layout: post
 category: life
-tag: essay poetry
+tags: [essay, poetry]
 ---
 
 鹊桥仙
