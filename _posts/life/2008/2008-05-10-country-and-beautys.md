@@ -1,7 +1,7 @@
 ---
 layout: post
 category: life
-tag: poetry essay
+tags: [poetry, essay]
 ---
 
 江山美人
