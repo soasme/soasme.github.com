@@ -1,6 +1,6 @@
 ---
 layout: post
-category: technical
+category: technology
 tag: game
 ---
 
