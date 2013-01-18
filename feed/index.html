@@ -1,27 +1,21 @@
 ---
-layout: nil
+layout: none
 ---
-
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-
-<title type="text" xml:lang="en">{{ site.root_desc }}</title>
-<link type="application/atom+xml" href="http://paulstamatiou.com/feed/" rel="self"/>
-<link type="text" href="http://paulstamatiou.com" rel="alternate"/>
-<updated>{{ site.time | date_to_xmlschema }}</updated>
-<id>http://paulstamatiou.com</id>
-<author>
-<name>Paul Stamatiou</name>
-</author>
-<rights>Copyright (c) 2005-2011, Paul Stamatiou; all rights reserved.</rights>
-
-{% for post in site.posts limit:20 %}
-<entry>
-<title>{{ post.title }}</title>
-<link href="http://paulstamatiou.com{{ post.url }}"/>
-<updated>{{ post.date | date_to_xmlschema }}</updated>
-<id>http://paulstamatiou.com{{ post.id }}</id>
-<content type="html">{{ post.content | remove: "<!--more-->" | xml_escape }}{% include rss_footer.html %}</content>
-</entry>
-{% endfor %}
-</feed>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{{ site.name }}</title>
+        <description>{{ site.description }}</description>
+        <link>{{ site.url }}</link>
+        <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+        {% for post in site.posts limit:10 %}
+            <item>
+                <title>{{ post.title }}</title>
+                <description>{{ post.content | xml_escape }}</description>
+                <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+                <link>{{ site.url }}{{ post.url }}</link>
+                <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+            </item>
+        {% endfor %}
+    </channel>
+</rss>
