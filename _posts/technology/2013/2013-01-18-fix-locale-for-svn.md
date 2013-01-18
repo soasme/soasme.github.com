@@ -10,12 +10,12 @@ Locale UTF-8
 莫名其妙突然用svn的时候遇到任何操作都会报这个warning:
 
 {% highlight bash %} 
-    luzong [trunk:144846] % echo $LC_CTYPE 
+    base [trunk:144846] % echo $LC_CTYPE 
     zh_CN.UTF-8
     svn: warning: cannot set LC_CTYPE locale
     svn: warning: environment variable LC_CTYPE is zh_CN.UTF-8
     svn: warning: please check that your locale name is correct
-    luzong [trunk:144846] % echo $LC_ALL 
+    base [trunk:144846] % echo $LC_ALL 
     en_US.UTF-8
     svn: warning: cannot set LC_CTYPE locale
     svn: warning: environment variable LC_CTYPE is zh_CN.UTF-8
