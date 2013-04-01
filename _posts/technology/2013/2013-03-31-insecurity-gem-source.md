@@ -9,9 +9,9 @@ tag: gem
 临时解决gem无法安装的问题
 ===
 
-就是这么个情况。
+就是这么个情况。不知道怎么解决ssl的问题了 哎。。。
 
-{% highlight=ruby %}
+{% highlight ruby %}
 
     ~ % gem install cramp
     ERROR:  Could not find a valid gem 'cramp' (>= 0), here is why:
@@ -23,6 +23,9 @@ tag: gem
     Do you want to add this insecure source? [yn]  y
 
     http://rubygems.org/ added to sources
+
+    ~ % gem source -r https://rubygems.org/
+    https://rubygems.org/ removed from sources
 
     ~ % gem install cramp
     Fetching: activesupport-3.0.20.gem (100%)
