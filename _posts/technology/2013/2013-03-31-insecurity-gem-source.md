@@ -36,3 +36,5 @@ tag: gem
     Building native extensions.  This could take a while...
 
 {% endhighlight %}
+
+see [some workarounds](http://railsapps.github.com/openssl-certificate-verify-failed.html)
