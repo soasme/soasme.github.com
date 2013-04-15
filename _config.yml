@@ -1,3 +1,6 @@
 pygments: true
 permalink: /:year/:month/:day/:title
 markdown: rdiscount
+name: "Life so as me"
+description: "Lin Ju's Blog"
+url: "http://www.soasme.com"
