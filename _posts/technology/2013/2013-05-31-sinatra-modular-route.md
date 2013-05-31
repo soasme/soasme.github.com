@@ -19,7 +19,9 @@ Sinatra Modular Route
     map('/example') { run ExampleController }
     map('/') { run ApplicationController }
 
-因为比较不爽写重复的代码，这两种方法都重复写了类名，所以自己想了下，在 `app.rb` 总控的类中去完成自动加载的事情：
+这两种方法都重复了类名，子控制器继承了总控制器，继而使用map来映射。
+
+自己想了下，其实可以在 `app.rb` 总控的类中去完成自动加载的事情，各个控制器是以中间件的形式进行调用的：
 
     # -*- coding: utf-8 -*-
 
