@@ -25,7 +25,7 @@ Sinatra Modular Route
 
     require 'sinatra/base'
 
-    class LyricHeart < Sinatra::Base
+    class Application < Sinatra::Base
 
       Dir.glob("#{ File.dirname(__FILE__) }/app/controllers/*_controller.rb") do |f|
         if f =~ /(\w+)_controller.rb/
