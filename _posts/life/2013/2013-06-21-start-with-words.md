@@ -7,8 +7,7 @@ tag: diary
 Start with words
 ===
 
-I saw sentences with "complicated" structure ever before.
-I always parsed these sentences in my best looked like a lexical parser drawing a token tree word by word.
+I saw sentences with "complicated" structure ever before, parsing them in my best looked like a lexical analyser drawing token tree word by word.
 A long time past, when I thought I were an old buzzing PC , I got the meaning if lucky I knew all the words at last.
 
 No sooner had I found it the wrong way to learn English than I changed my idea.
