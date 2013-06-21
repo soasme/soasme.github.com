@@ -7,7 +7,6 @@ tag: diary
 Start with words
 ===
 
-In computer science, the stack is simple `LIFO`(Last In First Out) data structure.
 I saw sentences with "complicated" structure ever before.
 I always parsed these sentences in my best looked like a lexical parser drawing a token tree word by word.
 A long time past, when I thought I were an old buzzing PC , I got the meaning if lucky I knew all the words at last.
