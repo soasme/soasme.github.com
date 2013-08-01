@@ -6,6 +6,7 @@ site:
 	rsync -vr --inplace --delete _site/categories/ categories
 	git add categories
 	git add tag
+	git commit -m 'make site.'
 	@echo 'Success to build site'
 
 commit_post:
