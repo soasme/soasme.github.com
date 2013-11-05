@@ -46,6 +46,10 @@ Using Evernote as TO-DO APP
 
 这篇笔记的末尾可以paste各种相关的备忘信息.
 
+Example:
+
+![Evernote TODO](/images/2013/2013-11-05-evernote-TODO.jpg)
+
 ### 总结
 
 这种方法近乎原始, 但因为使用起来简单至极, 所以特别中意.
