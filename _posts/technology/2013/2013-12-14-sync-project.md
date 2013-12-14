@@ -1,7 +1,7 @@
 ---
 layout: post
 category: technology
-tag: svn
+tag: api
 ---
 
 同步方案
