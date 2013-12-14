@@ -1,7 +1,7 @@
 site:
 	rm -rf tag
 	rm -rf categories
-	exec jekyll --no-server --no-auto
+	jekyll build
 	rsync -vr --inplace --delete _site/tag/ tag
 	rsync -vr --inplace --delete _site/categories/ categories
 	git add categories
