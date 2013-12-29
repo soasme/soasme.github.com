@@ -13,3 +13,6 @@ commit_post:
 	git commit -m 'add new post'
 
 commit: site commit_post
+
+serve:
+	jekyll serve
