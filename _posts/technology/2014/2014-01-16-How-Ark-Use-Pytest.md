@@ -152,6 +152,8 @@ addopts = -q --random
 
 ----
 
+Example code:
+
     @pytest.mark.usefixtures('works')
     def test_This_is_an_unexposed_endpoint(self):
         """This endpoint should be always attached with token.
