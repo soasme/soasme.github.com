@@ -123,9 +123,9 @@ addopts = -q --random
 
 这个例子说明了 params 的用法, 只需要一个配置列表, 用fixture做个桥接, 使用一个测试函数, 就能驱动着Ark许多页面的访问性测试.
 
-$ py.test checkpage/test_local.py -vv
-checkpage/test_local.py:104: test_fetch_common_pages_success_in_unsigend[/] PASSED
-checkpage/test_local.py:100: test_fetch_common_pages_success_in_signed[/reader/] PASSED   
+    $ py.test checkpage/test_local.py -vv
+    checkpage/test_local.py:104: test_fetch_common_pages_success_in_unsigend[/] PASSED
+    checkpage/test_local.py:100: test_fetch_common_pages_success_in_signed[/reader/] PASSED   
 
 ---
 
@@ -152,7 +152,7 @@ checkpage/test_local.py:100: test_fetch_common_pages_success_in_signed[/reader/]
 
 ----
 
-   @pytest.mark.usefixtures('works')
+    @pytest.mark.usefixtures('works')
     def test_This_is_an_unexposed_endpoint(self):
         """This endpoint should be always attached with token.
 
@@ -191,12 +191,12 @@ checkpage/test_local.py:100: test_fetch_common_pages_success_in_signed[/reader/]
 #### fixture 的位置
 
 pytest 可以在测试文件中定义一个fixture, 但是更多时候, 我们想要共享fixture. 
-准确的是, 这个小节该谈论的主题应该叫 plugin.
+准确的说, 这个小节该谈论的主题应该叫 plugin.
 
 我们需要知道, 使用 `py.test --fixture` 可以列出当前可用的所有fixture.
 首先, pytest 有内置了几个fixture, 比如`monkeypatch` 这种逆天的fixture, `tmpdir` 这种好用的fixture, `capsys` 这种强悍的fixture.
 
-其次, 我们也是用 pytest 第三方插件, 比如上文已经提过的 pytest-random, 用于乱序执行case; 还使用了 pytest-cov, 用于输出测试覆盖率报告.
+其次, 我们也使用 pytest 第三方插件, 比如上文已经提过的 pytest-random, 用于乱序执行case; 还使用了 pytest-cov, 用于输出测试覆盖率报告.
 
 再次, 我们也编写自定义插件. 将一堆 fixture 聚集到一个文件中, 之后再具体类型的测试中具体说明该类型测试要使用哪些插件.
 
