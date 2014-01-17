@@ -41,11 +41,13 @@ nose-randomize 会导致生成的 xml report 一片空白, [pytest-random] 则�
 
 #### 如何调用
 
-py.test . # 运行当前目录所有的 testcases
-py.test tests # 运行 tests 目录下的所有 cases
-py.test tests/test_model.py # 运行 当个测试文件
-py.test tests/test_model.py -k save # 运行 测试函数名中带 save 的测试用例
-py.test tests -s # 输出stdout, 另外, 如果case出错, 会自动把stdout/stderr都输出来. 
+基本用法:
+
+    py.test . # 运行当前目录所有的 testcases
+    py.test tests # 运行 tests 目录下的所有 cases
+    py.test tests/test_model.py # 运行 当个测试文件
+    py.test tests/test_model.py -k save # 运行 测试函数名中带 save 的测试用例
+    py.test tests -s # 输出stdout, 另外, 如果case出错, 会自动把stdout/stderr都输出来. 
 
 以上是我比较常用的方法.
 
@@ -56,8 +58,8 @@ py.test tests -s # 输出stdout, 另外, 如果case出错, 会自动把stdout/st
 除了可以使用时附带参数, 这些参数可以放在 ./pytest.ini ./tests/pytest.ini 里面, 执行目录的用例时会自动带上这些参数.
 具体是格式像这样:
 
-[pytest]
-addopts = -q --random 
+    [pytest]
+    addopts = -q --random 
 
 关于ini的寻找路径/优先级/发现首个配置即停/ini文件名, 参见: [How test configuration is read from configuration INI-files]) 
 
