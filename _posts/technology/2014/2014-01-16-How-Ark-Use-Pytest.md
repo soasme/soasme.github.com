@@ -265,11 +265,15 @@ pytest 可以在测试文件中定义一个fixture, 但是更多时候, 我们�
 ### trivial
 
 小知识: 
-pytest 也提供了 setup/teardown, 不过 setup_method 与 setUp 是可以同时存在的哟. 具体顺序有兴趣的看官自己可以动手试试看. [classic xunit-style setup]. Anyway, 作者还是会不厌其烦的跟你说: 请你使用 fixture.
+pytest 也提供了 setup/teardown, 不过 `setup_method` 与 `setUp` 是可以同时存在的哟.
+具体顺序有兴趣的看官自己可以动手试试看. [classic xunit-style setup].
+Anyway, 作者还是会不厌其烦的跟你说: 请你使用 fixture.
 
-关于skip: 一个 pitfall 是 skip 必须传入一个字符串作为参数. 不能用作 @unittest.skip. 而必须是 @pytest.skip("... reason").
+关于skip: 一个 pitfall 是 skip 必须传入一个字符串作为参数. 不能用作 `@unittest.skip`.
+而必须是 `@pytest.skip("... reason")`.
 有个xfail也挺好用: 用于用例在某种场景下一定要挂掉.
-138:    @pytest.mark.xfail(reason="response 500") 
+
+    138:    @pytest.mark.xfail(reason="response 500") 
 
 
 ### 总结
