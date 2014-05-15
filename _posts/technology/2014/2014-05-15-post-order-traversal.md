@@ -19,14 +19,15 @@ We know that using recursive is trivial:
 
 ![Post-Order Traversal](http://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sorted_binary_tree_postorder.svg/440px-Sorted_binary_tree_postorder.svg.png)
 
-It's funny to traverse tree without using recursive.
-First we should know that recursive solution can be
-refactor to a stack-based solution. We use stack to
-temporary save the nodes we will use a minute later.
-When traversal in post order, we need not only a
-stack, but also a pointer to parent.
+It's interesting to traverse a tree using stack-based solution
+which is an alternative of recursive-based solution.
+This post offers a solution that only one stack is needed
+instead of two stacks or both one stack and helper variables
+as usual when doing post order traversal.
 
-Here is an solution posted in wikipedia:
+Here are three usual solutions:
+
+### 1 stack and a visited tag variable solution
 
     iterativePostorder(node)
       parentStack = empty stack  
@@ -45,45 +46,9 @@ Here is an solution posted in wikipedia:
             visit(peeknode)
             lastnodevisited = peeknode
 
-And solution using 2 stack (It's a little tricky, but I
-really like it for its simply):
+It's posted at wikipedia[1].
 
-    public ArrayList<Integer> postorderTraversal(TreeNode root) {
-        ArrayList<Integer> array = new ArrayList<Integer>();
-        if (root == null) {
-            return array;
-        }
-        Stack<TreeNode> stack = new Stack<TreeNode>();
-        stack.push(root);
-        while (!stack.empty()) {
-            TreeNode cur = stack.pop();
-            array.add(0, cur.val);
-            if (cur.left != null) {
-                stack.push(cur.left);
-            }
-            if (cur.right != null) {
-                stack.push(cur.right);
-            }
-        }
-        return array;
-    }
-
-the sequence of pop if a reversed result for post-order traversal.
-It's very similar to pre-order traversal solution without
-using recursive:
-
-       a
-      /  \
-     b   c
-
-     push a
-     pop # a
-     push b
-     push c
-     pop # c
-     pop # b
-
-Here is another way to gotcha!
+### 1 stack and a previous helper variable solution
 
     void postOrderTraversalIterative(BinaryTree *root) {
       if (!root) return;
@@ -121,8 +86,7 @@ Here is another way to gotcha!
       }
     }
 
-This is the stack sequence for simple example, a with 2 children(b, c):
-
+Let's see the stack sequence for an example: a with 2 children(b, c):
 
     push a
     push b
@@ -131,10 +95,50 @@ This is the stack sequence for simple example, a with 2 children(b, c):
     pop // c
     pop // a
 
-And finally, I reduce a solution by myself.
-It's a little tricky too. Typically, we need to visit left
-child, then parent, then right child, then parent.
-So why not push parent twice into stack? Just like:
+### 2 stacks solution
+
+    public ArrayList<Integer> postorderTraversal(TreeNode root) {
+        ArrayList<Integer> array = new ArrayList<Integer>();
+        if (root == null) {
+            return array;
+        }
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        stack.push(root);
+        while (!stack.empty()) {
+            TreeNode cur = stack.pop();
+            array.add(0, cur.val);
+            if (cur.left != null) {
+                stack.push(cur.left);
+            }
+            if (cur.right != null) {
+                stack.push(cur.right);
+            }
+        }
+        return array;
+    }
+
+It's simple and I really like it. The sequence of stack
+operation is very similar to what is produced by a pre-order
+traversal:
+
+       a
+      /  \
+     b   c
+
+     push a
+     pop # a
+     push b
+     push c
+     pop # c
+     pop # b
+
+
+### A new way to hit the target!
+
+Finally, I reduce a solution.
+Typically, we need to visit left child, then parent,
+then right child, and last parent. So why not push
+each parent into stack twice? Just like:
 
     push a
     push a
@@ -166,6 +170,7 @@ Here is the code:
             }
             Stack<TreeNode> stack = new Stack<TreeNode>();
             while (!stack.empty() || current != null) {
+                // find left.
                 while (current != null) {
                     stack.push(current);
                     if (current.right != null) {
@@ -184,3 +189,8 @@ Here is the code:
             return array;
         }
     }
+
+
+Wow, It's awesome.
+
+[1]: http://en.wikipedia.org/wiki/Tree_traversal#Post-order_2
