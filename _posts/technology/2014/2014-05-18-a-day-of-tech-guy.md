@@ -22,7 +22,7 @@ Let's look at my life as a **TECH GUY** in daily work!
 
 ## Merge Pull Request
 
-We were using github enterprise edition to manage source for
+We had used github enterprise edition to manage source for
 a long time, although migrated to a github-likable system
 [code] developed by guys I work with last month. But the
 workflow is still the same!
@@ -32,7 +32,7 @@ This is basic workflow:
 * Make pull requests from feature branches to master
 * Invite coding reviewers, usually via posting a review comment:
   `@bke_team @f2e_team @somebody code review please.`.
-* If reviewers have latency to do the coding interviews, tech guy
+* If reviewers have latency to do the coding review, tech guy
   has responsibility to notify involvers.
 * Waiting for every reviewers posted a short phrase `lgtm` as
   a review comment (emoji `:lgtm:` is as well).
@@ -46,7 +46,7 @@ source code and the efficiency of process. Tech guy only
 needs to judge whether the pull requests have met the requirements
 of merging.
 
-As we all know, coding interview is the shield to make code clean.
+As we all know, coding review is the shield to make code clean.
 In some teams, merge will be executed by a high level developer
 who has both authority to decide and to merge,  which makes me feel
 he is more like a tyrant. In some teams, merge will be executed by
