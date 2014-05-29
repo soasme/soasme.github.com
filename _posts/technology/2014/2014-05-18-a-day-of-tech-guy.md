@@ -51,7 +51,7 @@ In some teams, merge will be executed by a high level developer
 who has both authority to decide and to merge,  which makes me feel
 he is more like a tyrant. In some teams, merge will be executed by
 guys who makes pull request himself, which makes routine in chaos
-and put codebase into a unmaintainable situation. It's necessary
+and put codebase into an unmaintainable situation. It's necessary
 to split coding review and merging into 2 routines.
 
 I develop a dashboard to help tech guy watching the progress
@@ -60,8 +60,8 @@ Here is a screenshot:
 
 ![electro-lgtms](/images/2014/electro-lgtms.png)
 
-A tech guy can get all information needed to merge **at a glance**.
-The basic information contains requester, issue id, title, TO-DOs,
+A tech guy can get all informations he wanted to merge **at a glance**.
+The basic information include requester, issue id, title, TO-DOs,
 reviewers, their conclusions, CI result, coverage report.
 
 If one reviewer says `lgtm`, his avatar would rounded by green border,
@@ -72,8 +72,8 @@ notify involvers.
 If all reviewers says `lgtm` and ci is passed, the item will be
 rendered over green background.
 
-Usually, tech guy need go to issue page and
-click the merge button whenever he sees the green item at last.
+Usually, tech guy needs going to issue page and
+clicking the merge button whenever he sees the green item at last.
 
 It's really simple for him: **find green item, merge it**.
 
