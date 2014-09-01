@@ -15,4 +15,4 @@ commit_post:
 commit: site commit_post
 
 serve:
-	jekyll serve
+	jekyll serve --watch
