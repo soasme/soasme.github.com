@@ -63,4 +63,28 @@ Here we use
 Seeking for better solution now :(
 I think the concat part is urgly.
 
+### Updated
+
+We can write a `map-all` to extend `map` like what `partition-all` to `partiion`:
+
+{% highlight clojure %}
+(defn map-all
+  [f & colls]
+  (letfn [(do-map-all [results f & colls]
+            (if-let [args (seq (->> colls (filter seq) (map first)))]
+              (let [result (apply f args)
+                    results (concat results (list result))]
+                (recur results f (map rest colls)))
+              results))]
+    (apply do-map-all () f colls)))
+
+(println (map-all list '(1 2) '(3 4 5)))
+;; => ((1 3) (2 4) (5))
+
+(println (map-all list '(1 2 3 nil) '(4 5)))
+;; => ((1 4) (2 5) (3) (nil))
+{% endhighlight %}
+
+Thanks @dennis, @xhh a lot!
+
 [1]: https://oj.leetcode.com/problems/reorder-list/
