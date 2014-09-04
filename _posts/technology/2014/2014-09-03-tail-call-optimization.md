@@ -66,3 +66,4 @@ index b445084..320649d 100644
 需要注意的是, recur 只能用在 loop 或者 function 上.
 Clojure 做的事情是编译的时候在 loop / function 开始的地方设置 label, 在 recur 的地方使用 `goto label`.
 也就是说, recur 实际上将尾递归变成了循环.
+
