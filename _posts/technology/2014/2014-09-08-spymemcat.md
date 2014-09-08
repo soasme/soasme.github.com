@@ -7,6 +7,7 @@ tag: clojure
 # Spymemcat
 
 A Clojure memcached client library wraps spymemcached.
+Source: [soasme/spymemcat](https://github.com/soasme/spymemcat)
 
 ## Lein Usage
 
