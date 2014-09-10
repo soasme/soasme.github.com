@@ -239,3 +239,5 @@ tag: clojure
   (interface "select by name"))
 
 {% endhighlight %}
+
+Inspired by [À la carte configuration in Clojure APIs](http://cemerick.com/2011/10/17/a-la-carte-configuration-in-clojure-apis/).
