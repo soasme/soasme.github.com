@@ -12,7 +12,7 @@ tag: clojure
 
 以 Github 的 Clojure Client [Raynes/tentacles](https://github.com/Raynes/tentacles) 为例.
 
-作为一个需要传入 Token 的函数, Tentacles 选择了让开发者将 Token 作为 `user-events` 最后一个参数:
+我们需要拿到一些配置(诸如key, secret, token之类), 传入函数以此获得足够的权限调用API.
 
 {% highlight clojure %}
 ; via :auth
@@ -52,8 +52,9 @@ tag: clojure
 ## 隐式: 动态作用域
 
 以 Memcached Client [soasme/spymemcat](https://github.com/soasme/spymemcat) 为例
+在使用 Client 前, 肯定需要配置好 Memcached 实例的 host, port.
 
-开发者在使用的时候, 可以通过 Clojure 的特性: 动态作用域 binding 进行调用:
+开发者在使用的时候, 可以通过 Clojure 的特性: 动态作用域 binding 进行设置:
 
 {% highlight clojure %}
 
@@ -116,6 +117,8 @@ tag: clojure
        (dissoc-meta)))
 {:b 6, :a 5}
 {% endhighlight %}
+
+这个库照顾了两种风格的API, 同一个实现都提供了两种风格的调用方法.
 
 从实现上看, 大致是这么做的:
 
