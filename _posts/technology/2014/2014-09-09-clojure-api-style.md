@@ -8,7 +8,7 @@ tag: clojure
 
 对于大部分 Clojure 流行的库, 大致有如下3种方法可以让开发者导入自己的配置:
 
-## 作为函数的参数传入
+## 显式: 函数参数
 
 以 Github 的 Clojure Client [Raynes/tentacles](https://github.com/Raynes/tentacles) 为例.
 
@@ -49,7 +49,7 @@ tag: clojure
 {% endhighlight %}
 
 
-## 动态作用域
+## 隐式: 动态作用域
 
 以 Memcached Client [soasme/spymemcat](https://github.com/soasme/spymemcat) 为例
 
@@ -86,8 +86,10 @@ tag: clojure
 
 ----------------
 
+显式传参写法简单易读, 但调用稍微麻烦;
+隐式作用域调用参数少, 但暴露了内部的数据实现;
 到底是显式传参还是动态绑定更好, 没有定论.
-不过由于第二种方法比较省参数, 社区似乎比较偏爱这一种.
+大概由于第二种方法比较省参数, 社区似乎比较偏爱这一种.
 
 ## 混合式
 
@@ -166,7 +168,7 @@ tag: clojure
 即 `[db id ...]`.
 
 {% highlight clojure %}
-(defn interface
+(definterface interface
   [config param])
 {% endhighlight %}
 
@@ -193,7 +195,13 @@ tag: clojure
 最后, 套上中间层:
 
 {% highlight clojure %}
-(alter-var-root (var ~name) with-config*)
+(defmacro definterface
+ [...]
+ ...
+ (alter-var-root (var ~name) with-config*)
+ ...
+)
+
 {% endhighlight %}
 
 
