@@ -23,9 +23,9 @@ nose-randomize 会导致生成的 xml report 一片空白, [pytest-random] 则�
 * `--pdb` 与 `--capture` 不冲突 - -
 * 歪叔写了这个 vim 插件用于简化 vim 与 pytest 的整合: [pytest-vim-compiler]; nosetest 的等价物要额外装一个 pypi 上没有的插件.
 
-在比较 pytest 与 nose 后, 得出了这么几个结论: 
+在比较 pytest 与 nose 后, 得出了这么几个结论:
 
-暂时看不到 py.test 有什么劣势. nose 1.x 已经进入不活跃状态, nose2 还太年轻. 
+暂时看不到 py.test 有什么劣势. nose 1.x 已经进入不活跃状态, nose2 还太年轻.
 以及, nose驱动的测试基本上pytest可以平滑的接管. 大部分使用nose的测试都能用pytest无缝切换. 一切不兼容的特性, 修改起来也很容易, 事实上Ark在一两个PR内就完成了测试载体的切换.
 
 ### pytest 是什么
@@ -47,7 +47,7 @@ nose-randomize 会导致生成的 xml report 一片空白, [pytest-random] 则�
     py.test tests # 运行 tests 目录下的所有 cases
     py.test tests/test_model.py # 运行 当个测试文件
     py.test tests/test_model.py -k save # 运行 测试函数名中带 save 的测试用例
-    py.test tests -s # 输出stdout, 另外, 如果case出错, 会自动把stdout/stderr都输出来. 
+    py.test tests -s # 输出stdout, 另外, 如果case出错, 会自动把stdout/stderr都输出来.
 
 以上是我比较常用的方法.
 
@@ -59,9 +59,9 @@ nose-randomize 会导致生成的 xml report 一片空白, [pytest-random] 则�
 具体是格式像这样:
 
     [pytest]
-    addopts = -q --random 
+    addopts = -q --random
 
-关于ini的寻找路径/优先级/发现首个配置即停/ini文件名, 参见: [How test configuration is read from configuration INI-files]) 
+关于ini的寻找路径/优先级/发现首个配置即停/ini文件名, 参见: [How test configuration is read from configuration INI-files])
 
 插件也会提供一些参数.
 自己也能定制一些参数.
@@ -113,8 +113,8 @@ nose-randomize 会导致生成的 xml report 一片空白, [pytest-random] 则�
 
     UNSIGNED_COMMON_PAGES = [
         '/',
-        '/reader/', 
-    ] 
+        '/reader/',
+    ]
     @pytest.fixture(params=UNSIGNED_COMMON_PAGES)
     def unsigned_page(request):
         return request.param
@@ -127,7 +127,7 @@ nose-randomize 会导致生成的 xml report 一片空白, [pytest-random] 则�
 
     $ py.test checkpage/test_local.py -vv
     checkpage/test_local.py:104: test_fetch_common_pages_success_in_unsigend[/] PASSED
-    checkpage/test_local.py:100: test_fetch_common_pages_success_in_signed[/reader/] PASSED   
+    checkpage/test_local.py:100: test_fetch_common_pages_success_in_signed[/reader/] PASSED
 
 ---
 
@@ -148,7 +148,7 @@ nose-randomize 会导致生成的 xml report 一片空白, [pytest-random] 则�
             fs_logger,
             store_logger,
             ):
-        return App(request) 
+        return App(request)
 
 使用一个小技巧, 使分散的小fixture, 聚集成一个大规模的fixture.
 
@@ -194,7 +194,7 @@ Example code:
 
 #### fixture 的位置
 
-pytest 可以在测试文件中定义一个fixture, 但是更多时候, 我们想要共享fixture. 
+pytest 可以在测试文件中定义一个fixture, 但是更多时候, 我们想要共享fixture.
 准确的说, 这个小节该谈论的主题应该叫 plugin.
 
 我们需要知道, 使用 `py.test --fixture` 可以列出当前可用的所有fixture.
@@ -256,15 +256,15 @@ pytest 可以在测试文件中定义一个fixture, 但是更多时候, 我们�
 * pytest_addoption 添加 `--with-data-service`
 * pytest_configure 使添加此标识的session在最开始可以建表/起mc/db服务
 * pytest_sessionfinish 使添加此标识的session在最后可以杀掉db/mc服务(是否要摧毁所有的表?)
-* pytest_runtest_teardown 每个case结束时判断是否有修改过数据服务, 如果有, 刷掉.  
- 
+* pytest_runtest_teardown 每个case结束时判断是否有修改过数据服务, 如果有, 刷掉.
+
 但你需要知道, pytest 的 hook 非常多, 你可以在 [plugin] 中查阅这些hook.
 你还需要知道, pytest 的 hook 至多, 文档甚至列不全, 像 `pytest_sessionfinish` 是我在源代码里挖到的 hook.
 我想, 这么多hook, 应该可以满足你那变态的需求吧(在[这位少年对PM的吐槽]面前你竟然敢称自己的需求很变态?
 
 ### trivial
 
-小知识: 
+小知识:
 pytest 也提供了 setup/teardown, 不过 `setup_method` 与 `setUp` 是可以同时存在的哟.
 具体顺序有兴趣的看官自己可以动手试试看. [classic xunit-style setup].
 Anyway, 作者还是会不厌其烦的跟你说: 请你使用 fixture.
@@ -273,7 +273,7 @@ Anyway, 作者还是会不厌其烦的跟你说: 请你使用 fixture.
 而必须是 `@pytest.skip("... reason")`.
 有个xfail也挺好用: 用于用例在某种场景下一定要挂掉.
 
-    138:    @pytest.mark.xfail(reason="response 500") 
+    138:    @pytest.mark.xfail(reason="response 500")
 
 
 ### 总结
@@ -282,15 +282,15 @@ Anyway, 作者还是会不厌其烦的跟你说: 请你使用 fixture.
 
 
 
-[1]: https://gist.github.com/soasme/8453802/raw/317bbce771302b1f5f17f12973449ce1787f0920/gistfile1.txt 
-[2]: http://pytest.org/latest/ 
-[How test configuration is read from configuration INI-files]: http://pytest.org/latest/customize.html#how-test-configuration-is-read-from-configuration-ini-files   
-[Calling pytest from Python code]: http://pytest.org/latest/usage.html#calling-pytest-from-python-code 
+[1]: https://gist.github.com/soasme/8453802/raw/317bbce771302b1f5f17f12973449ce1787f0920/gistfile1.txt
+[2]: http://pytest.org/latest/
+[How test configuration is read from configuration INI-files]: http://pytest.org/latest/customize.html#how-test-configuration-is-read-from-configuration-ini-files
+[Calling pytest from Python code]: http://pytest.org/latest/usage.html#calling-pytest-from-python-code
 [Defining own assertion comparison]: http://pytest.org/latest/assert.html#defining-your-own-assertion-comparison
 [pytest-random]: https://github.com/klrmn/pytest-random
 [pytest-vim-compiler]: https://github.com/5long/pytest-vim-compiler
-[这页文档]: http://pytest.org/latest/fixture.html 
+[这页文档]: http://pytest.org/latest/fixture.html
 [Support for unittest.TestCase / Integration of fixtures]: http://pytest.org/latest/unittest.html
 [plugin]: http://pytest.org/latest/plugins.html
-[这位少年对PM的吐槽]: http://www.douban.com/people/iwinux/status/1314107154/ 
+[这位少年对PM的吐槽]: http://www.douban.com/people/iwinux/status/1314107154/
 [classic xunit-style setup]: http://pytest.org/latest/xunit_setup.html
