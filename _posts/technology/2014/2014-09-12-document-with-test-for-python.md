@@ -59,6 +59,20 @@ I think it is the ability to put your doctests in a text file one of the most co
 documents.
 
 Assume that we are now trying to introduce a module named `idiot`.
+
+{% highlight python %}
+# idiot/__init__.py
+# -*- coding: utf-8 -*-
+
+class Idiot(object):
+
+def __init__(self, iq=30):
+self.iq = iq
+
+def add(a, b):
+return a + b + 1
+{% endhighlight %}
+
 You first write a `tutorial.md` file:
 
 
