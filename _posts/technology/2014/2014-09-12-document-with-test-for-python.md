@@ -66,14 +66,14 @@ Assume that we are now trying to introduce a module named `idiot`.
 
 class Idiot(object):
 
-def __init__(self, iq=30):
-self.iq = iq
+    def __init__(self, iq=30):
+    self.iq = iq
 
 def add(a, b):
-return a + b + 1
+    return a + b + 1
 {% endhighlight %}
 
-You first write a `tutorial.md` file:
+First write a `tutorial.md` file:
 
 
     # Basic tutorial
@@ -160,11 +160,125 @@ Run:
 
 Also, using fixtures from classes, modules or projects and autouse fixtures (xUnit setup on steroids) fixtures are supported when executing text doctest files.
 
+### Real World Example
+
+[earl/beanstalkc](https://github.com/earl/beanstalkc)
+
+There is no unittest or interation test in repo, doctest only.
+
+    beanstalkc
+    ├── LICENSE
+    ├── README.mkd
+    ├── README_fixtures.py
+    ├── TUTORIAL.mkd
+    ├── TUTORIAL_fixtures.py
+    ├── beanstalkc.py
+    ├── setup.py
+    └── test
+        ├── __init__.py
+        ├── fixtures.py
+        ├── no-yaml.mkd
+        └── no-yaml_fixtures.py
+
+    1 directory, 11 files
+
+All test written in 3 markdown documents: `README.mkd`,`TUTORIAL.mkd`, `no-yaml.mkd`.
+
+Furthermore, the author wrote `setup` and `teardown` as fixtures.
+
+File `README.mkd`
+
+    beanstalkc
+    ==========
+
+    beanstalkc is a simple beanstalkd client library for Python. [beanstalkd][] is
+    a fast, distributed, in-memory workqueue service.
+
+    beanstalkc depends on [PyYAML][], but there are ways to avoid this dependency.
+    See Appendix A of the tutorial for details.
+
+    beanstalkc is pure Python, and is compatible with [eventlet][] and [gevent][].
+
+    beanstalkc is currently only supported on Python 2 and automatically tested
+    against Python 2.6 and 2.7. Python 3 is not (yet) supported.
+
+    [beanstalkd]: http://kr.github.com/beanstalkd/
+    [eventlet]: http://eventlet.net/
+    [gevent]: http://www.gevent.org/
+    [PyYAML]: http://pyyaml.org/
+
+
+    Usage
+    -----
+
+    Here is a short example, to illustrate the flavor of beanstalkc:
+
+        >>> import beanstalkc
+        >>> beanstalk = beanstalkc.Connection(host='localhost', port=14711)
+        >>> beanstalk.put('hey!')
+        1
+        >>> job = beanstalk.reserve()
+        >>> job.body
+        'hey!'
+        >>> job.delete()
+
+    For more information, see [the tutorial](TUTORIAL.mkd), which will explain most
+    everything.
+
+
+    License
+    -------
+
+    Copyright (C) 2008-2014 Andreas Bolka, Licensed under the [Apache License,
+    Version 2.0][license].
+
+    [license]: http://www.apache.org/licenses/LICENSE-2.0
+
+File `test/fixtures.py`:
+
+{% highlight python %}
+import os, signal, time
+
+_BEANSTALKD_PID = None
+
+def setup(module):
+    beanstalkd = os.getenv('BEANSTALKD', 'beanstalkd')
+    module._BEANSTALKD_PID = os.spawnlp(
+            os.P_NOWAIT,
+            beanstalkd,
+            beanstalkd, '-l', '127.0.0.1', '-p', '14711')
+    time.sleep(0.5) # Give beanstalkd some time to ready.
+
+def teardown(module):
+    os.kill(module._BEANSTALKD_PID, signal.SIGTERM)
+{% endhighlight %}
+
+File `.nose.cfg`:
+
+{% highlight ini %}
+[nosetests]
+verbosity=3
+
+with-doctest=1
+doctest-extension=mkd
+doctest-fixtures=_fixtures
+{% endhighlight %}
+
+Let's find the magic `_fixtures` here!
+
+> Use the Doctest plugin with --with-doctest or the NOSE_WITH_DOCTEST environment variable to enable collection and execution of doctests. Because doctests are usually included in the tested package (instead of being grouped into packages or modules of their own), nose only looks for them in the non-test packages it discovers in the working directory.
+>
+> Doctests may also be placed into files other than python modules, in which case they can be collected and executed by using the --doctest-extension switch or NOSE_DOCTEST_EXTENSION environment variable to indicate which file extension(s) to load.
+>
+> When loading doctests from non-module files, use the --doctest-fixtures switch to specify how to find modules containing fixtures for the tests. A module name will be produced by appending the value of that switch to the base name of each doctest file loaded. For example, a doctest file “widgets.rst” with the switch --doctest_fixtures=_fixt will load fixtures from the module widgets_fixt.py.
+
+
 
 ### See also:
 
 * [doctest](https://docs.python.org/2/library/doctest.html)
 * [Doctest wiki](http://en.wikipedia.org/wiki/Doctest)
 * [Doctest-introduction](http://pythontesting.net/framework/doctest/doctest-introduction/)
+* [Nose doctest plugin](http://nose.readthedocs.org/en/latest/plugins/doctests.html)
 
 (Write The Fuck Document, M2Crypto.)
