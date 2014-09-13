@@ -4,17 +4,12 @@ category: technology
 tag: python
 ---
 
-# Document with test for Python
+# Python doctest
 
-介绍一种与常规 && 常见的 unittest, integrate test, doctest 风格完全迥异的测试: doc-with-test.
+Doctest is a module included in the Python programming language's standard library that allows the easy generation of tests based on output from the standard Python interpreter shell, cut and pasted into docstrings.
 
-unittest, integrate test 大家写的比较多.
-unittest 一般做模块的细粒度测试.
-integrate test 一般做功能特性级别的粗粒度测试.
 
-这里想就 doctest 与 doc-with-test 的区别简单介绍下.
-
-###### Python doctest example:
+### Doctest in docstring example
 
 {% highlight python %}
 
@@ -33,7 +28,7 @@ if __name__ == '__main__':
     doctest.testmod()
 {% endhighlight %}
 
-执行 `$ python code.py`, 会输出
+Execute `$ python code.py`:
 
 {% highlight bash %}
 (venv)t % python t.py
@@ -52,17 +47,20 @@ Got:
 {% endhighlight %}
 
 
-doctest 将测试和文档写在代码里.
+Doctest makes innovative use of the following Python capabilities:
 
+* docstrings
+* The Python interactive shell, (both command line and the included idle application).
+* Python introspection
 
-###### doc-with-test example
+### Doctest in a separate file from code
 
-doc-with-test 是将测试写在文档里.
+I think it is the ability to put your doctests in a text file one of the most cool features of doctest (in .md, .rst, .whatever format you want).This is especially useful for functional testing, since that allows you to write developer-friendly test-driven
+documents.
 
-听上去有点难以理解, 我也来做个简单的示例.
+Assume that we are now trying to introduce a module named `idiot`.
+You first write a `tutorial.md` file:
 
-假设我们要给开发者写一份文档, 介绍 `idiot` 库怎么使用, 我们要写一个简单的教程,
-就保存为 `tutorial.md`:
 
     # Basic tutorial
 
@@ -83,7 +81,7 @@ doc-with-test 是将测试写在文档里.
 
     Now that we have an instance of `idiot`, we can have `dull` do some add:
 
-        >>> dull.add(1, 2)
+        >>> idiot.add(1, 2)
         4
 
     See? He will never return a right answer to you.
@@ -94,7 +92,38 @@ doc-with-test 是将测试写在文档里.
     Hope you using it in your production repo. Good luck!
 
 
-然后我们写一份 nose 的配置文件 `.nose.cfg`
+### Running doctest in seperate file
+
+Run:
+
+    $ python -m doctest tutorial.md
+
+Let's see verbose output (run with `-v`):
+
+    (venv)t % python -m doctest tutorial.md -v
+    Trying:
+        import idiot
+    Expecting nothing
+    ok
+    Trying:
+        dull = idiot.Idiot(iq=30)
+    Expecting nothing
+    ok
+    Trying:
+        idiot.add(1, 2)
+    Expecting:
+        4
+    ok
+    1 items passed all tests:
+       3 tests in tutorial.md
+    3 tests in 1 items.
+    3 passed and 0 failed.
+    Test passed.
+
+
+### Running doctest with nose
+
+Write`.nose.cfg`:
 
 {% highlight ini %}
 [nosetests]
@@ -104,21 +133,24 @@ with-doctest=1
 doctest-extension=mkd
 {% endhighlight %}
 
-然后运行之:
+Run:
 
     $ nosetests -c .nose.cfg
 
-就像你写了单元测试一样, 文档中的代码部分会全部被 nosetests 执行一遍.
 
-## 说明
+### Running doctest with py.test
 
-说穿了, 这就是 nose 的特性, 解析 markdown 文件, 去做 doctest.
+Run:
 
-## More?
+    py.test --doctest-glob='*.rst'
 
-doc-with-test 从粒度上来说算是一种集成测试, 它不适合用作单元测试.
-如果你的库有大量的API需要说明, 不妨尝试下这种做法.
+Also, using fixtures from classes, modules or projects and autouse fixtures (xUnit setup on steroids) fixtures are supported when executing text doctest files.
 
-好处嘛, 我就不说了咯.
 
-(去死吧, M2Crypto.)
+### See also:
+
+* [doctest](https://docs.python.org/2/library/doctest.html)
+* [Doctest wiki](http://en.wikipedia.org/wiki/Doctest)
+* [Doctest-introduction](http://pythontesting.net/framework/doctest/doctest-introduction/)
+
+(Write The Fuck Document, M2Crypto.)
