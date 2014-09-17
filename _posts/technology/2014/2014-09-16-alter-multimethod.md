@@ -151,3 +151,17 @@ defmulti delete
   [job]
   (delete (.consumer job) (.jid job)))
 {% endhighlight %}
+
+The macro allow us to write code in 2 style as mentioned in
+[prev post](http://www.soasme.com/2014/09/09/clojure-api-style/):
+
+{% highlight clojure %}
+; Style 1
+(def client (beanstalkd-factory))
+(delete client 1)
+(.close client)
+
+; Style 2
+(with-beanstalkd (beanstalkd-factory)
+ (delete 1))
+{% endhighlight %}
