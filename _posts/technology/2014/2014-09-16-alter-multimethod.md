@@ -16,7 +16,7 @@ first you define the multiple dispatch then the methods
 to which calls are dispatched.
 
 {% highlight clojure %}
-defmulti delete
+(defmulti delete
   (fn [instance & rest]
     (type instance)))
 
