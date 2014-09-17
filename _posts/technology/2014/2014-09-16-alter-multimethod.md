@@ -1,3 +1,8 @@
+---
+layout: post
+category: technology
+tag: clojure
+---
 
 # Alter multimethod
 
