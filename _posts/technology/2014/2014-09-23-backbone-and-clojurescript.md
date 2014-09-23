@@ -202,7 +202,7 @@ Run `lein cljsbuild auto`, it will execute all the cljsbuild task and watch modi
     Compiling "resources/public/dist/js/main.js" from ["src-cljs"]...
     Successfully compiled "resources/public/dist/js/main.js" in 0.29 seconds.
 
-Open new console, run `lein ring server-headless` and appy visiting
+Open new console, run `lein ring server-headless` and happy visiting
 `http://localhost:3000`!
 
 ![Screenshot](/images/2014/cljs-backbone.png)
