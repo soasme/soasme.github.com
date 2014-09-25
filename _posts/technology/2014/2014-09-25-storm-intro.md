@@ -170,18 +170,157 @@ Test running script:
 
 ## Real World Clojure Project
 
+As mentioned before, storm comes with a Clojure DSL for defining
+spouts, bolts, and topologies.
+
+The rest of post, I will introduce you some pieces of clojure DSL:
+
+* define spout
+* define bolt
+* define topology
+* run topology in local mode
+
 ### Spout
 
-TODO
+`defspout` is used for defining spouts in Clojure.
+The signature for defspout looks like the following:
+
+{% highlight clojure %}
+(defspout name output-declaration *option-map & impl)
+{% endhighlight %}
+
+Here’s an example defspout implementation from storm-starter:
+
+{% highlight clojure %}
+(defspout sentence-spout ["sentence"]
+  [conf context collector]
+  (let [sentences
+        ["a little brown dog" "the man petted the dog"
+         "four score and seven years ago"
+         "an apple a day keeps the doctor away"]]
+    (spout
+     (nextTuple
+      []
+      (Thread/sleep 100)
+      ;(log-message "DEBUG>>>>>>>>>>" (rand-nth sentences))
+      (emit-spout! collector
+                   [(rand-nth sentences)]))
+     (ack
+      [id]
+      ;; You only need to define this method for reliable spouts
+      ;; (such as one that reads off of a queue like Kestrel)
+      ;; This is an unreliable spout, so it does nothing here
+      ))))
+{% endhighlight %}
 
 ### Bolt
 
-TODO
+`defbolt` is used for defining bolts in Clojure.
+The signature for defbolt looks like the following:
+
+{% highlight clojure %}
+(defbolt name output-declaration *option-map & impl)
+{% endhighlight %}
+
+#### Sample bolts
+
+{% highlight clojure %}
+(defbolt split-sentence ["word"]
+  [tuple collector]
+  (let [words (.split (.getString tuple 0) " ")]
+    (doseq [w words]
+      (emit-bolt! collector [w] :anchor tuple))
+    (ack! collector tuple)))
+{% endhighlight %}
+
+#### Prepared bolts
+
+To do more complex bolts, such as ones that do joins and streaming aggregations, the bolt needs to store state. You can do this by creating a prepared bolt which is specified by including {:prepare true} in the option map. Consider, for example, this bolt that implements word counting:
+
+{% highlight clojure %}
+(defbolt word-count ["word" "count"]
+  {:prepare true}
+  [conf context collector]
+  (let [counts (atom {})]
+    (bolt (execute
+           [tuple]
+           (let [word (.getString tuple 0)]
+             (swap! counts
+                    (partial merge-with +) {word 1})
+             (emit-bolt! collector
+                         [word (@counts word)]
+                         :anchor tuple)
+             (ack! collector tuple))))))
+{% endhighlight %}
 
 ### Topology
 
-TODO
+To define a topology, use the topology function
+ topology takes in two arguments: a map of “spout specs” and a map of “bolt specs”. Each spout and bolt spec wires the code for the component into the topology by specifying things like inputs and parallelism.
+
+{% highlight clojure %}
+(defn -main
+  [& args]
+  (let [conf {TOPOLOGY-DEBUG true, TOPOLOGY-MAX-SPOUT-PENDING 1, "logFile" (first args)}
+        topos (topology
+               {"1" (spout-spec sentence-spout)}
+               {"3" (bolt-spec
+                     {"1" :shuffle}
+                     split-sentence
+                     :p 5)
+                "4" (bolt-spec
+                     {"3" ["word"]}
+                     word-count
+                     :p 6)})
+        cluster (local-cluster)
+        _ (.submitTopology cluster "APIv2-Monitor-Topology" conf topos)]
+    (Thread/sleep 10000)
+    (.shutdown cluster)))
+{% endhighlight %}
 
 ### Run Topology
 
-TODO
+!
+
+    $ lein run -m api-monitor.main "hi"
+    ... (boot log)
+    5031 [Thread-32-4] INFO  backtype.storm.daemon.executor - Processing received message source: 3:2, stream: default, id: {}, ["years"]
+    5031 [Thread-26-4] INFO  backtype.storm.daemon.task - Emitting: 4 default ["seven" 3]
+    5032 [Thread-32-4] INFO  backtype.storm.daemon.task - Emitting: 4 default ["years" 3]
+    5032 [Thread-26-4] INFO  backtype.storm.daemon.executor - Processing received message source: 3:2, stream: default, id: {}, ["ago"]
+    5032 [Thread-26-4] INFO  backtype.storm.daemon.task - Emitting: 4 default ["ago" 3]
+    5127 [Thread-42-1] INFO  backtype.storm.daemon.task - Emitting: 1 default ["four score and seven years ago"]
+    5128 [Thread-22-3] INFO  backtype.storm.daemon.executor - Processing received message source: 1:1, stream: default, id: {}, ["four score and seven years ago"]
+    5128 [Thread-22-3] INFO  backtype.storm.daemon.task - Emitting: 3 default ["four"]
+    5128 [Thread-22-3] INFO  backtype.storm.daemon.task - Emitting: 3 default ["score"]
+    5128 [Thread-28-4] INFO  backtype.storm.daemon.executor - Processing received message source: 3:5, stream: default, id: {}, ["four"]
+    5128 [Thread-22-3] INFO  backtype.storm.daemon.task - Emitting: 3 default ["and"]
+    5129 [Thread-28-4] INFO  backtype.storm.daemon.task - Emitting: 4 default ["four" 4]
+    5129 [Thread-22-3] INFO  backtype.storm.daemon.task - Emitting: 3 default ["seven"]
+    5129 [Thread-28-4] INFO  backtype.storm.daemon.executor - Processing received message source: 3:5, stream: default, id: {}, ["score"]
+    5129 [Thread-30-4] INFO  backtype.storm.daemon.executor - Processing received message source: 3:5, stream: default, id: {}, ["and"]
+    5129 [Thread-22-3] INFO  backtype.storm.daemon.task - Emitting: 3 default ["years"]
+    5129 [Thread-28-4] INFO  backtype.storm.daemon.task - Emitting: 4 default ["score" 4]
+    5129 [Thread-26-4] INFO  backtype.storm.daemon.executor - Processing received message source: 3:5, stream: default, id: {}, ["seven"]
+    5129 [Thread-30-4] INFO  backtype.storm.daemon.task - Emitting: 4 default ["and" 4]
+    5129 [Thread-22-3] INFO  backtype.storm.daemon.task - Emitting: 3 default ["ago"]
+    5129 [Thread-26-4] INFO  backtype.storm.daemon.task - Emitting: 4 default ["seven" 4]
+
+Note: There is still a fatal bug for storm itself to run on clojure 1.6.0,
+plz stay clojure 1.5.1 until new storm version released If you meet
+the error :
+
+    291 [Thread-8] ERROR backtype.storm.event - Error when processing event
+    java.lang.IllegalStateException: Attempting to call unbound fn: #'backtype.storm.util/some?
+
+
+## Resource
+
+Code above is hosted in https://gist.github.com/3f45ec3f3456583cd257
+
+Thanks:
+
+* http://storm.apache.org/documentation/Clojure-DSL.html
+* http://storm.apache.org/documentation/Tutorial.html
+* https://github.com/nathanmarz/storm-starter
+* Book: Get started with storm
