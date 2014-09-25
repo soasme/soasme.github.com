@@ -1,7 +1,9 @@
 ---
 layout: post
 category: technology
-tag: storm
+tag:
+- storm
+- clojure
 ---
 
 # Storm Intro
@@ -21,8 +23,8 @@ Storm can be used in:
 * etc.
 
 Note: Storm cares about consuming streaming of data and processing
-these streams in arbitrarily complex ways, not about queueing and
-data storing.
+these streams in arbitrarily complex ways, not about data state and
+storing.
 
 
 ## Terms
@@ -316,7 +318,7 @@ the error :
 
 ## Resource
 
-Code above is hosted in https://gist.github.com/3f45ec3f3456583cd257
+Code above is hosted in [Github Gist](https://gist.github.com/3f45ec3f3456583cd257)
 
 Thanks:
 
