@@ -9,7 +9,9 @@ tag: storm
 Storm is a distributed realtime computation system, which provides
 a set of general primitives for doing **REALTIME** computation.
 Storm makes it easy to reliably process unbounded streams of data
-unlike what Hadoop did via batch processing. Storm can be used in:
+unlike what Hadoop did via batch processing.
+
+Storm can be used in:
 
 * Realtime Analytics
 * Online Machine Learning
@@ -21,6 +23,7 @@ unlike what Hadoop did via batch processing. Storm can be used in:
 Note: Storm cares about consuming streaming of data and processing
 these streams in arbitrarily complex ways, not about queueing and
 data storing.
+
 
 ## Terms
 
@@ -86,7 +89,86 @@ debuging.
 
 Run on Storm cluster, that is, in production environment.
 
-## Real World Example.
+
+## Let's start!
+
+Note: focus in local mode, which means that the development and test topologies
+are completely in process on local machine. Nimbus is my computer.
+
+Now I am about to create an empty topology (no spout, no bolt) and then submit it
+to nimbus (local machine), print the cluster instance.
+
+Install zeromq:
+
+    $ brew install zeromq
+
+Install zookeeper:
+
+    $ brew install zookeeper
+
+Configure dependency:
+
+Add `[storm "0.9.0.1"]` to `:dependency` in `project.clj`.
+Run `lein deps`.
+
+Write a script:
+
+{% highlight clojure %}
+(ns example.main
+  (:import (backtype.storm Config
+                           LocalCluster
+                           topology.TopologyBuilder
+                           tuple.Fields)))
+
+(defn -main
+  [& args]
+  (let [conf (doto (Config.)
+               (.put Config/TOPOLOGY_MAX_SPOUT_PENDING 1)
+               (.put "logFile" (first args))
+               (.setDebug false))
+        builder (doto (TopologyBuilder.)
+                  )
+        cluster (doto (LocalCluster.)
+                  (.submitTopology "This-is-an-empty-Topology"
+                                   conf
+                                   (.createTopology builder)))]
+    (println cluster)
+    (.shutdown cluster)))
+{% endhighlight %}
+
+In main function, I create the topology and a LocalCluster instance.
+In conjunction with Config instance, LocalCluster allows us to try
+out different cluster configurations.
+
+I create the topology using a TopologyBuilder. In addition, spouts
+and bolts are defined via topology. I'll explain it later.
+
+Actually, the above is in a more java-idiom way. Let's try using
+Clojure DSL for storm:
+
+{% highlight clojure %}
+(ns example.main
+  (:use [backtype.storm clojure config]))
+
+(defn -main
+  [& args]
+  (let [conf {TOPOLOGY-DEBUG true, TOPOLOGY-MAX-SPOUT-PENDING 1, "logFile" (first args)}
+        topos (topology {} {})
+        cluster (local-cluster)
+        _ (.submitTopology cluster "APIv2-Monitor-Topology" conf topos)]
+    (println cluster)
+    (.shutdown cluster)))
+{% endhighlight %}
+
+Test running script:
+
+    % lein run -m api-monitor.main
+    ... (staring INFO log)
+    2526 [main] INFO  backtype.storm.daemon.nimbus - Setting new assignment for topology id APIv2-Monitor-Topology-1-1411654899: #backtype.storm.daemon.common.Assignment{:master-code-dir "/var/folders/2g/xtwm8ql505v4cn4wtxlr2tch0000gn/T//1df83451-5360-493b-8f4d-8c81c73b814c/nimbus/stormdist/APIv2-Monitor-Topology-1-1411654899", :node->host {"c1cf6ccf-4782-4a7e-8cd5-80437e16f633" "localhost"}, :executor->node+port {[1 1] ["c1cf6ccf-4782-4a7e-8cd5-80437e16f633" 4]}, :executor->start-time-secs {[1 1] 1411654900}}
+    #<LocalCluster backtype.storm.LocalCluster@338ff9a1>
+    ... (shuting down INFO log)
+
+## Real World Clojure Project
 
 ### Spout
 
@@ -102,7 +184,4 @@ TODO
 
 ### Run Topology
 
-#### LocalCluster
-#### StormSubmitter
-#### DRPC Topology
-
+TODO
