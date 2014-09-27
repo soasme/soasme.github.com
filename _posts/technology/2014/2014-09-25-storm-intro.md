@@ -11,7 +11,7 @@ tag:
 Storm is a distributed realtime computation system, which provides
 a set of general primitives for doing **REALTIME** computation.
 Storm makes it easy to reliably process unbounded streams of data
-unlike what Hadoop did via batch processing.
+unlike what Hadoop did through batch processing.
 
 Storm can be used in:
 
