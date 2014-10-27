@@ -47,6 +47,7 @@ user=> (exec (abcx-regex any "axaxa")
 这有助于我们更好地地设计系统内外的数据结构, 抽象这个世界.
 
 
+Inspired by "Clojure Programming".
 
 [1]: http://books.google.com.sg/books?id=QWLpAgAAQBAJ&pg=PA170&lpg=PA170&dq=Natural+identifiers&source=bl&ots=eJtYAS4BKy&sig=9_9RalPwKlr1D5TGd4ZQdJQL8io&hl=zh-CN&sa=X&ei=rKVMVOCCOaapmgWm9ILABA&ved=0CEIQ6AEwBA#v=onepage&q=Natural%20identifiers&f=false
 [2]: http://en.wikipedia.org/wiki/Surrogate_key
