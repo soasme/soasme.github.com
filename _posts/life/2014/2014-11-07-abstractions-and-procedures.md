@@ -81,6 +81,11 @@ Now, we don't actually need a bunch of implementations of task node (board, list
     | └ Node(Task B)
     |   |
     |   ├ Node(todo item 1)
+    |   | |
+    |   | |
+    |   | ├ Node(do something first)
+    |   | |
+    |   | └ Node(do another then)
     |   |
     |   └ Node(todo item 2)
     |
