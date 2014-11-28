@@ -58,4 +58,4 @@ tag: diary
 早在1930年, 第一个用 foo 形容`随便什么东西`的人, 竟是因为..!..!..?:
 
 是的, 因为福禄寿里面的`福`字. 老美觉得福字既然代表Lucky, 就用上了.
-因为单词 `fubar` 的存在, 遂有 foo, bar.
+不过 foo, bar 的来源已经无法考啦, [众说纷纭](http://stackoverflow.com/questions/4868904/what-is-the-origin-of-foo-and-bar).
