@@ -4,8 +4,7 @@ category: technology
 tag: SICP
 ---
 
-SICP 读前言
-=============
+# SICP 读前言
 
 人类的活动大抵是离不开规划(program)的.
 
@@ -15,9 +14,9 @@ SICP 读前言
 
 易得:
 
-* => 程序设计是一种心智活动.
+* 程序设计是一种心智活动.
 
-* => 程序是一种媒介
+* 程序是一种媒介
 
 To take advantage of the unsurpassed flexibility of this medium requires tremendous skill‑technical, intellectual, and esthetic. 
 
