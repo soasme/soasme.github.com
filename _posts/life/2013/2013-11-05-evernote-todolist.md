@@ -1,6 +1,6 @@
 ---
 layout: post
-category: diary
+category: life
 tag: evernote
 ---
 

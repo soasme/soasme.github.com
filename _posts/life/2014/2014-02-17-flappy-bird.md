@@ -1,6 +1,6 @@
 ---
 layout: post
-category: diary
+category: technology
 tag: game
 ---
 
