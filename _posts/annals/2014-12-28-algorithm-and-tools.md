@@ -50,7 +50,9 @@ IMO 已用多年. 某天醒来, 竟不再支持 Google Hangout.
 调参数供 @ainesmile 遣玩, 速度忽快忽慢, 管道或上或下, 东倒西歪, 避之不及.
 是为一乐事.
 
-![FlappyBird](/images/2014/FlappyBirdPhysicsWorld.gif)
+<div id="flappy-bird"></div>
+<img src="/images/2014/FlappyBirdPhysicsWorld.gif" style="height: 500px;"/>
+
 
 
 #### 信手黄犬花芯睡
@@ -61,7 +63,7 @@ IMO 已用多年. 某天醒来, 竟不再支持 Google Hangout.
 ![DSON](/images/2014/dogeon.png)
 
 
-### 一切有为法, 函数式编程, 如露亦如电, 应作如是观
+### 一切有为法, 万物皆函数, 如露亦如电, 应作如是观
 
 趣学 Clojure, 于 Java/JS/Python 践行FP.
 此大概为入行数年 学得最为开心之语言.
