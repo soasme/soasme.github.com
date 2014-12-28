@@ -4,7 +4,7 @@ category: annals
 tags: annals
 ---
 
-# 2014, 算, 器
+# 2014, 算法和工具
 
 
 2014流水账: 练习半年英语和算法, 玩了半年Clojure, 培养了一个前端.
@@ -99,33 +99,32 @@ Using om, core.asyc.
 
 ### 工作
 
-产出趋慢, 然复用性, 可测试性变高, 希望不是一件坏事.
+产出趋慢, 然复用性, 可测试性变高, 希望不是件坏事.
 因同事交接, 得以处理些数据的, 算法的, 持续集成的任务种种, 多多益善尔.
 
 ### 其它
 
 以及一些学了小有时日却又未有甚么产出:
 
-* Padas(Library)
-* Storm(Library)
 * Axe(Library)
-* RubyMotion(Library)
-* OpenResty(Library)
-* Neo4j(Database)
-* PostgreSQL(Database)
-* Swift(Language)
-* Slack Integration(Tool)
-* Jenkins Configuration(Tool)
-* Crash Course(ESL)
 * BBC News(ESL)
+* Crash Course(ESL)
+* Jenkins Configuration(Tool)
+* Neo4j(Database)
+* OpenResty(Library)
+* Padas(Library)
+* RubyMotion(Library)
 * Scientific American(ESL)
+* Slack Integration(Tool)
+* Storm(Library)
+* Swift(Language)
 
 ### 爷爷, 再见
 
-岁末, 爷爷去世.
-爷爷一生勤俭, 刚正不阿, 锤凿劈刨, 精通木工手艺.
-造桥, 围垦, 修铁路, 建水库, 样样均关乎民生.
-此乃匠人信仰, 孙当继承!
+岁末, 爷爷去世, 心中伤痛, 难以抚平.
+爷爷一生勤俭, 刚正不阿, 锤凿劈刨, 手艺精湛.
+造桥, 围垦, 修铁路, 建水库, 关乎民生, 心系家国.
+孙自视匠人, 当以爷爷为榜样, 学习今生不止, 手艺磨练不息.
 
 ### 总结
 
@@ -133,4 +132,22 @@ Using om, core.asyc.
 * 事不在多做, 在有所得, 是以工作平奇却得多.
 * 器不在多造, 在琢在磨, 是以做慢工而出细活.
 
-2015, 去新的领域精进, 修半年内功, 练半载招式, 选种新的家伙什耍耍, 一定要很威风好玩的!
+去年心愿回顾:
+
+* √ Clojure 玩了小半年
+* X 没能看完10+英文小说, 只看了浮士德, 呼啸山庄.
+* √ 出现了第三座书山
+
+
+### 2015
+
+* 筹备人生大事
+* 认知计算, 程序的构造与解释
+* Language
+  * Scheme
+* 算法
+  * 温习常见数据结构
+  * POJ
+* Blog
+  * Most in English
+  * Serial
