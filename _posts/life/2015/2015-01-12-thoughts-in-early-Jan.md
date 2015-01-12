@@ -77,17 +77,18 @@ Neo4j 的 node / relation 本身也很像这种模式~
 现在的知识管理大多偏重树形关系, 这更多是在梳理.
 我理想中的知识管理应该是知识点之间互有关联.
 
-有时间的话就干他: https://github.com/soasme/NodeAssocNode
+有时间的话就干他: [Node&Node](https://github.com/soasme/NodeAssocNode)
 
 ## 微博架构
 
 * Feed似乎先用推, 再用拉, 最后用C重写.
 * BigPipe 似乎可以做到数据异步加载. 在后端他们也许是通过这样的方法来做到:
- * 把数据打的更散
- * 异步
+  * 把数据打的更散
+  * 异步
 * 目录结构很清晰
-* 不知道是哪个做决策的人做出了替换Smarty模板的决定, 改用PHP直接编写这样的.
- * 殊不知, Douban这边则是很费力地把PTL全换成了Mako. 其实何苦呢?
+* 不知道是哪个做决策的人做出了替换Smarty模板的决定, 改用PHP直接编写.
+  * 殊不知, Douban这边则是很费力地把PTL全换成了Mako.
+  * 性能与可读性真是欢喜冤家, 大家各行各道吧...
 
 ## 创业
 
@@ -96,7 +97,7 @@ Neo4j 的 node / relation 本身也很像这种模式~
 
 ## 打地鼠与傅里叶变换
 
-将一直地鼠用 (出现时间, 一个波函数) 来表示, 其中波函数是地鼠的高度, 它能表示地鼠的高度.
+一直地鼠用 (出现时间, 一个波函数) 来表示, 其中波函数是地鼠的高度, 它能表示地鼠的高度.
 
 ![](http://upload.wikimedia.org/wikipedia/commons/7/72/Fourier_transform_time_and_frequency_domains_%28small%29.gif)
 
