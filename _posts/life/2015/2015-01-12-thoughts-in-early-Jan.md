@@ -90,15 +90,20 @@ Neo4j 的 node / relation 本身也很像这种模式~
   * 殊不知, Douban这边则是很费力地把PTL全换成了Mako.
   * 性能与可读性真是欢喜冤家, 大家各行各道吧...
 
+ref: 微博应用架构发展
+
 ## 创业
 
 * 快速验证想法, 快速尝试市场, 不行就撤.
 * 领域要熟悉, 意识要超前
 
+
 ## 打地鼠与傅里叶变换
 
-一直地鼠用 (出现时间, 一个波函数) 来表示, 其中波函数是地鼠的高度, 它能表示地鼠的高度.
+一只地鼠用 (出现时间, 一个波函数) 来表示, 其中波函数是地鼠的高度.
 
 ![](http://upload.wikimedia.org/wikipedia/commons/7/72/Fourier_transform_time_and_frequency_domains_%28small%29.gif)
 
 遭遇了一次锤头的打击, 只需要再叠加一个波即可.
+
+灵感来自: SICP - 数据过程不分家.
