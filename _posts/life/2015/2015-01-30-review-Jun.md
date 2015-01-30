@@ -2,7 +2,7 @@
 layout: post
 category: life
 tag: review
-title: 一月看书总结
+title: 一月总结
 ---
 
 # 一月总结
