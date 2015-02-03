@@ -193,7 +193,7 @@ Answer:
           (begin (set! wrong-times 0)
                  #t)
           (begin (set! wrong-times (+ wrong-times 1))
-                 (if (> wrong-times 7)
+                 (if (>= wrong-times 7)
                      (call-the-cops))
                  #f)))
     (define (dispatch input-password method)
@@ -211,10 +211,6 @@ Execute:
 1 ]=> (define acc (make-account 100 'secret-password))
 
 ;Value: acc
-
-1 ]=> ((acc 'incorrect-password 'withdraw) 100)
-Incorrent password
-;Unspecified return value
 
 1 ]=> ((acc 'incorrect-password 'withdraw) 100)
 Incorrent password
