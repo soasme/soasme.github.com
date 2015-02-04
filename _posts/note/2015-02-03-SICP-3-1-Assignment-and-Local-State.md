@@ -322,6 +322,10 @@ Execute:
 {% highlight scheme %}
 1 ]=> (rand 'generate)
 
+;Value: 1
+
+1 ]=> (rand 'generate)
+
 ;Value: 2
 
 1 ]=> ((rand 'reset) 0)
