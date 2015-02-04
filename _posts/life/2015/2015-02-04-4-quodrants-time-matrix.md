@@ -7,7 +7,7 @@ tag:
 
 # The Four Quadrants of Time Management
 
-One thing I've found really helpful is The Four Quadrants of Time Management popularized by Stephen Covey in his book "The 7 Habits of Highly Effective People" where you basically put things  you're going to work on into one grid of matrix. 
+One thing I've found really helpful is The Four Quadrants of Time Management popularized by Stephen Covey in his book "The 7 Habits of Highly Effective People" where you basically put a thing you're going to work on into one grid of matrix. 
 
 Everything you do in life can be classified by it’s urgency (Urgent or Not Urgent) and by it’s importance (Important or Not Important). This creates the matrix illustrated above with four quadrants:
 
