@@ -336,3 +336,94 @@ Execute:
 
 ;Value: 1
 {% endhighlight %}
+
+
+#### Exercise 3.7
+
+Consider the bank account objects created by make-account, with the password modification described in Exercise 3.3. Suppose that our banking system requires the ability to make joint accounts. Define a procedure make-joint that accomplishes this. Make-joint should take three arguments. The first is a password-protected account. The second argument must match the password with which the account was defined in order for the make-joint operation to proceed. The third argument is a new password. Make-joint is to create an additional access to the original account using the new password. For example, if peter-acc is a bank account with password open-sesame, then
+
+{% highlight scheme %}
+(define paul-acc
+  (make-joint peter-acc
+              'open-sesame
+              'rosebud))
+{% endhighlight %}
+
+will allow one to make transactions on peter-acc using the name paul-acc and the password rosebud. You may wish to modify your solution to Exercise 3.3 to accommodate this new feature.
+
+Answer:
+
+{% highlight scheme %}
+(define (make-joint account original-password joint-password)
+  (define (verify-password input joint)
+    (eq? input joint))
+  (define (dispatch input-password method)
+    (if (verify-password input-password joint-password)
+        (account original-password method)
+        (lambda (x) "Wrong joint password.")))
+  dispatch)
+{% endhighlight %}
+
+Execute:
+
+{% highlight scheme %}
+1 ]=> (define peter-acc (make-account 100 'open-sesame))
+
+;Value: peter-acc
+
+1 ]=> (define paul-acc (make-joint peter-acc 'open-sesame 'rosebud))
+
+;Value: paul-acc
+
+1 ]=> ((paul-acc 'open-sesame 'withdraw) 10)
+
+;Value 2: "Wrong joint password."
+
+1 ]=> ((paul-acc 'rosebud 'withdraw) 10)
+
+;Value: 90
+{% endhighlight %}
+
+#### Exercise 3.8
+
+When we defined the evaluation model in 1.1.3, we said that the first step in evaluating an expression is to evaluate its subexpressions. But we never specified the order in which the subexpressions should be evaluated (e.g., left to right or right to left). When we introduce assignment, the order in which the arguments to a procedure are evaluated can make a difference to the result. Define a simple procedure f such that evaluating
+
+{% highlight scheme %}
+(+ (f 0) (f 1))
+{% endhighlight %}
+
+will return 0 if the arguments to + are evaluated from left to right but will return 1 if the arguments are evaluated from right to left.
+
+{% highlight scheme %}
+1 ]=> (define (exec-from-left f) (+ (f 0) (f 1)))
+
+;Value: exec-from-left
+
+1 ]=> (define (exec-from-right f) (+ (f 1) (f 0)))
+
+;Value: exec-from-right
+
+1 ]=> (define (make-f variant) (lambda (x) (let ((y (* variant x))) (set! variant (- variant 1)) y)))
+
+;Value: make-f
+
+1 ]=> (exec-from-left (make-f 1))
+
+;Value: 1
+
+1 ]=> (exec-from-right (make-f 1))
+
+;Value: 0
+
+1 ]=> (define (make-f variant) (lambda (x) (let ((y (* variant x))) (set! variant (+ variant 1)) y)))
+
+;Value: make-f
+
+1 ]=> (exec-from-left (make-f 0))
+
+;Value: 0
+
+1 ]=> (exec-from-right (make-f 0))
+
+;Value: 1
+{% endhighlight %}
