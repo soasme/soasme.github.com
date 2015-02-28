@@ -1,6 +1,7 @@
 ---
 layout: post
-category: note
+category: technology
+tag: SICP
 title: SICP 3.1 Assignment and Local State
 ---
 
