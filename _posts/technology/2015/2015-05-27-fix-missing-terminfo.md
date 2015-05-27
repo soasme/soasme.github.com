@@ -2,10 +2,9 @@
 layout: post
 category: technology
 tag: system
-title: Fix `zsh: tput: unknown terminal` and `fish: Could not set up terminal`
 ---
 
-# Fix `zsh: tput: unknown terminal` and `fish: Could not set up terminal`
+# Fix "zsh: tput: unknown terminal" and "fish: Could not set up terminal"
 
 When I tried to login my shell, iTerm2 will output these messages:
 
