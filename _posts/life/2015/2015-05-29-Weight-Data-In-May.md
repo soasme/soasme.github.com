@@ -2,6 +2,7 @@
 layout: post
 category: life
 tag: diary
+title: 五月的减脂数据
 ---
 
 消耗(大卡), 摄入(大卡), 当日清晨体重, 称重时间, 日期, 腰围
