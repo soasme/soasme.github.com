@@ -1,11 +1,10 @@
 ---
 layout: post
+title: Goodbye 621
 category: life
 tag: diary
 ---
 
-Goodbye 621
-===
 
 生活还在继续，这是一个月来最大的好消息吧。嗯。
 

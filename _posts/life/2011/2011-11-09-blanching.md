@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 水漂
 category: life
 tag: diary
 ---
 
-水漂
-===
 
 其实吧。
 我到现在还是不懂爱情。

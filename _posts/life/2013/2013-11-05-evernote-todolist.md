@@ -1,11 +1,10 @@
 ---
 layout: post
+title: Using Evernote as TO-DO APP
 category: life
 tag: evernote
 ---
 
-Using Evernote as TO-DO APP
-===
 
 我曾尝试过很多Mac上的TO-DO APPs, 最终都没有长久地使用下去.
 原因大概是觉得繁琐吧, 总有不如人意的地方.

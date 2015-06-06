@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: SICP 读前言
 tag: SICP
 ---
 
-# SICP 读前言
+
 
 人类的活动大抵是离不开规划(program)的.
 
@@ -18,18 +19,18 @@ tag: SICP
 
 * 程序是一种媒介
 
-To take advantage of the unsurpassed flexibility of this medium requires tremendous skill‑technical, intellectual, and esthetic. 
+To take advantage of the unsurpassed flexibility of this medium requires tremendous skill‑technical, intellectual, and esthetic.
 
 - Marvin Minsky
 
 程序设计中牵涉到的3类对象: 人脑/程序集合/计算机.
 
-人脑抽象模型, 直到一个 metastable place, 
-模型实现为程序, 
+人脑抽象模型, 直到一个 metastable place,
+模型实现为程序,
 程序被计算机执行.
 
 人脑对模型的认知会加深至下一个 metastable place,
-程序集合更趋近于模型的本质, 
+程序集合更趋近于模型的本质,
 计算机也更接近问题的精确解.
 
 在这个认知过程中, 程序集合的演变不比模型认知变更那般简单, 它被多次付诸编写, 定型.

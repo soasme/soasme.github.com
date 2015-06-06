@@ -1,12 +1,13 @@
 ---
 layout: post
 category: technology
+title: How to build a tree in clojure
 tag:
 - clojure
 - algorithm
 ---
 
-# How to build a tree in clojure
+
 
 Clojure code is composed of literal representations of its own data structures and atomic values; this characteristic is formally called homoiconicity, or more casually, code-as-data. [1]
 It means that we can use clojure code to represent tree data structure!

@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 欢乐狂想曲
 category: life
 tag: diary
 ---
 
-欢乐狂想曲
-===
 
 童话本来就是一首欢乐的狂想曲嘛！
 

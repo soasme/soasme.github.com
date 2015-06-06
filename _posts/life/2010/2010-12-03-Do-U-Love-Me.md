@@ -2,10 +2,9 @@
 layout: post
 category: life
 tag: diary
+title: 你到底喜不喜欢我
 ---
 
-你到底喜不喜欢我
-====
 
 这是个很温馨的故事。
 

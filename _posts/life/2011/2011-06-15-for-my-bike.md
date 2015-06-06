@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 悼文
 category: life
 tag: diary
 ---
 
-悼文
-===
 
 我的第二任卡拉掐退役了。
 

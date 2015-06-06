@@ -1,11 +1,10 @@
 ---
 layout: post
 category: life
+title: The Four Quadrants of Time Management
 tag:
   - "time management"
 ---
-
-# The Four Quadrants of Time Management
 
 One thing I've found really helpful is The Four Quadrants of Time Management popularized by Stephen Covey in his book "The 7 Habits of Highly Effective People" where you basically put a thing you're going to work on into one grid of matrix. 
 

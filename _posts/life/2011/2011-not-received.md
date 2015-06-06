@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 未接
 category: life
 tag: diary
 ---
 
-未接
-===
 
 醒觉来电数个 短信一封
 

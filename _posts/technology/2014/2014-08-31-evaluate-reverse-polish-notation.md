@@ -1,12 +1,13 @@
 ---
 layout: post
 category: technology
+title: Evaluate Reverse Polish Notation
 tag:
 - clojure
 - algorithm
 ---
 
-# Evaluate Reverse Polish Notation
+
 
 ### Problem
 

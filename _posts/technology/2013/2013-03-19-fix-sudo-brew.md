@@ -1,11 +1,10 @@
 ---
 layout: post
+title: sudo brew是禁忌
 category: technology
 tag: brew
 ---
 
-sudo brew是禁忌
-===
 
 因为曾经用过 `sudo brew` 的样子，所以 `/usr/local/include` 等folder被改成了root权限，下场：
 

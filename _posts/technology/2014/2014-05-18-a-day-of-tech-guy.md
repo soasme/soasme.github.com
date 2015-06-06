@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: A Day of Tech Guy
 tag: web
 ---
 
-# A Day of Tech Guy
+
 
 Our team tried hard to improve daily workflow in the past few years.
 We made every effort to dispatch different tasks to the right person

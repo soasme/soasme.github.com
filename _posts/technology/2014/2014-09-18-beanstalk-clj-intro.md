@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: Introduction to beanstalk-clj
 tag: clojure
 ---
 
-# Introduction to [beanstalk-clj](https://github.com/soasme/beanstalk-clj)
+
 
 Getting started
 ---------------
@@ -467,4 +468,3 @@ That's it, for now. We've left a few capabilities untouched (touch and
 time-to-run). But if you've really read through all of the above, send me a
 message and tell me what you think of it. And then go get yourself a treat. You
 certainly deserve it.
-

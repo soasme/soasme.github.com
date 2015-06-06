@@ -2,10 +2,10 @@
 layout: post
 category: life
 tag: diary
+title: 老妈的鼓励
 ---
 
-老妈的鼓励
-===
+
 
 老妈就要下岗了。
 

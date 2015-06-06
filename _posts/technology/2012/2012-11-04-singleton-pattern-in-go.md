@@ -2,10 +2,9 @@
 layout: post
 category: technology
 tags: [go, pattern]
+title: 在Go语言中使用单例模式
 ---
 
-在Go语言中使用单例模式
-=====================
 
 在Go语言中的单例模式写法会比Java/Python繁琐一点，但是总的思路是一样的。
 

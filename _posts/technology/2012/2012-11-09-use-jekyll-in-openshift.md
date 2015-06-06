@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 在OpenShift上使用Jekyll
 category: technology
 tags: [openshift, jekyll]
 ---
 
-在OpenShift上使用Jekyll
-===
 
 
 ssh到openshift机器上后默认执行gem install jekyll是没有权限的.

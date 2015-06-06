@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 最近两个月
 category: life
 tag: diary
 ---
 
-最近两个月
-===
 
 两个月很快又过去了，每当写月报的时候就很难过，时间桑，请你走慢一点！
 

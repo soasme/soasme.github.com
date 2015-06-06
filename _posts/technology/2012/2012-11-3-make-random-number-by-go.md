@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 使用Golang生成随机数
 category: technology
 tags: go
 ---
 
-使用Golang生成随机数
-===
 
 `main` 中的代码用来计算生成指定数字所需要的次数，最后打印出来的是平均次数。
 

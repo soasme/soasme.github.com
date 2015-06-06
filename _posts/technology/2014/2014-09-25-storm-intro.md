@@ -1,12 +1,13 @@
 ---
 layout: post
 category: technology
+title: Storm Intro
 tag:
 - storm
 - clojure
 ---
 
-# Storm Intro
+
 
 Storm is a distributed realtime computation system, which provides
 a set of general primitives for doing **REALTIME** computation.

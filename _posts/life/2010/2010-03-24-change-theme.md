@@ -2,10 +2,10 @@
 layout: post
 category: life
 tag: diary
+title: 换主题
 ---
 
-换主题
-===
+
 
 好像最近变得有点孤僻，变得呆滞了。
 总觉得周围太吵，于是用沉默来反抗

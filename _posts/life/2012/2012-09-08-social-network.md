@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 社交网络
 category: life
 tag: diary
 ---
 
-社交网络
-===
 
 五年来沉迷过的社交网络有 QZone，Weibo，GPlus，Twitter，Douban。
 

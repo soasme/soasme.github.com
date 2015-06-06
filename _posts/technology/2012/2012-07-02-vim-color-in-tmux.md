@@ -1,11 +1,10 @@
 ---
 layout: post
+title: tmux下vim的配色
 category: technology
 tag: vim
 ---
 
-tmux下vim的配色
-===
 
 发生一件怪事，进入tmux后，用vim打开文件，以前的各种配色都不见了，甚为诡异。应该是进入tmux后terminal的配色方案出现了变化。
 

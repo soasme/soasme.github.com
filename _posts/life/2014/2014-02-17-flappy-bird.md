@@ -2,10 +2,9 @@
 layout: post
 category: technology
 tag: game
+title: Flappy Bird
 ---
 
-Flappy Bird
-==========
 
 时下流行的游戏叫 Flappy Bird.
 恐怕十数年后, 不会有多少人能够想起这个游戏来.

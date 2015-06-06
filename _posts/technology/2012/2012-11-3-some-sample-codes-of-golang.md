@@ -2,10 +2,9 @@
 layout: post
 category: technology
 tags: go
+title: 一些Go语言的特性
 ---
 
-一些Go语言的特性
-====
 
 都在代码里了。
 

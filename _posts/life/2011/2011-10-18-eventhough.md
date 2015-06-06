@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 即便如此
 category: life
 tag: diary
 ---
 
-即便如此
-===
 
 好暖的太阳。
 光鲜靓丽却不浮躁。

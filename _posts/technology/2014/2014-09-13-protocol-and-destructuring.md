@@ -1,9 +1,10 @@
 ---
 layout: post
 category: technology
+title: Protocal and destruturing
 tag: clojure
 ---
-# Protocal and destruturing
+
 
 Unfortunately, we cannot use destruturing or rest arguments
 in the specification of those methods within the `def protocol`

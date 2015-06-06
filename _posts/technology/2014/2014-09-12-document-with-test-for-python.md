@@ -2,9 +2,9 @@
 layout: post
 category: technology
 tag: python
+title: Python doctest
 ---
 
-# Python doctest
 
 Doctest is a module included in the Python programming language's standard library that allows the easy generation of tests based on output from the standard Python interpreter shell, cut and pasted into docstrings.
 

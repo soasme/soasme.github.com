@@ -2,10 +2,11 @@
 layout: post
 category: life
 tag: diary
+title: 爱，简单？复杂？
 ---
 
-爱，简单？复杂？
-====
+
+
 
 谈恋爱已经快一年了，不能再说什么不懂得怎么谈恋爱了。
 

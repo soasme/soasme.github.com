@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 白鸽
 category: life
 tag: diary
 ---
 
-白鸽
-===
 
 大清早的晒着阳光，看着白鸽在楼宇间飞舞。
 知道飞到面前时才意识到，它们的头和尾是黑色的。

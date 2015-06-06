@@ -1,10 +1,10 @@
 ---
 layout: post
 category: life
+title: 学无止境
 tag: diary
 ---
 
-# 学无止境
 
 双十一玩了数年, 今日却再也打不起半点兴致了.
 各大电商玲琅满目的 Showcase 看的好生不自在, 索性关了这些页面罢了.

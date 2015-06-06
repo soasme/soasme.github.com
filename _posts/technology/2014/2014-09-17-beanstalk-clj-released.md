@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: beanstalk-clj
 tag: clojure
 ---
 
-# beanstalk-clj
+
 
 ![Build Status](https://travis-ci.org/soasme/beanstalk-clj.svg?branch=master)
 

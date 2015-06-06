@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: Brew using proxy
 tag: brew
 ---
 
-# Brew using proxy
+
 
 When I want to download some package, it just do not work:
 

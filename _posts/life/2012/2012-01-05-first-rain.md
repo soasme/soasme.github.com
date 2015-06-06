@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 初雨
 category: life
 tag: diary
 ---
 
-初雨
-===
 
 新年的第一场雨啊。
 这鬼天气冷得要命。

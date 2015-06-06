@@ -2,10 +2,9 @@
 layout: post
 category: life
 tag: diary
+title: 浅夏
 ---
 
-浅夏
-===
 
 那时候，浅浅的夏。
 

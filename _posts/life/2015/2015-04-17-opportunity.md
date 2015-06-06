@@ -1,10 +1,11 @@
 ---
 layout: post
 category: life
+title: 迟到
 tag: diary
 ---
 
-# 迟到
+
 
 ## 谷雨
 

@@ -1,11 +1,10 @@
 ---
 layout: post
+title: Game Designer
 category: technology
 tag: game
 ---
 
-Game Designer
-===
 
 成为一名Game Designer并不容易。
 

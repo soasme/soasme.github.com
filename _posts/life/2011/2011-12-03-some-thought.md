@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 一些想法
 category: life
 tag: diary
 ---
 
-一些想法
-===
 
 我想说坚持真的是件蛮难的事情。
 不管是坚持写博，还是坚持减肥。

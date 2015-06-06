@@ -2,10 +2,10 @@
 layout: post
 category: life
 tag: diary
+title: 在可预见的未来
 ---
 
-在可预见的未来
-====
+
 
 我想毕业。
 

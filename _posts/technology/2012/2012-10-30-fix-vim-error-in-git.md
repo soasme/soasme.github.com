@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 修复vim在git提交时的报错
 category: technology
 tags: [vim, git]
 ---
 
-修复vim在git提交时的报错
-===
 
 这个报错很诡异，已经很多天了。想来想去，觉得是vim退出时可能返回了错误的状态码。
 

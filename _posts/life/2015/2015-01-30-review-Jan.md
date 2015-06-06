@@ -1,11 +1,9 @@
 ---
 layout: post
 category: life
-tag: review
 title: 一月总结
+tag: review
 ---
-
-# 一月总结
 
 ## 计算的本质
 

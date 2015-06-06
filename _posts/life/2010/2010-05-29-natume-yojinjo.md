@@ -2,11 +2,10 @@
 layout: post
 category: life
 tag: diary
+title: 夏目友人帐。
 ---
 
 
-夏目友人帐。
-===
 
 因为那淡淡的故事中，每次，都是那么幸福的结局。
 

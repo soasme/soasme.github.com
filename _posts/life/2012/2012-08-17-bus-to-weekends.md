@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 开往周末的公交
 category: life
 tag: diary
 ---
 
-开往周末的公交
-===
 
 只能站立，不算拥挤。
 时光在车窗外有条不紊的倒退。

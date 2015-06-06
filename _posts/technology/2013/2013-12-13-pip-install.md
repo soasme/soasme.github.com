@@ -2,10 +2,10 @@
 layout: post
 category: technology
 tag: python
+title: PIP Install
 ---
 
-PIP Install
-===========
+
 
 
 服务器上的库想用`sudo pip install package`不太现实哎, 都被SA管着呢.

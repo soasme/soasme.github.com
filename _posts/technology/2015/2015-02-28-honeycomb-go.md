@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: Honeycomb GO
 tag: game
 ---
 
-# Honeycomb GO
+
 
 想到一个好玩的游戏, 是围棋的变种.
 

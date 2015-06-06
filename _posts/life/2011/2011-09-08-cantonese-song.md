@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 粤语歌
 category: life
 tag: diary
 ---
 
-粤语歌
-===
 
 我也不知道哪天开始喜欢听粤语歌的？
 以前只知道 光辉岁月 是beyond唱的。

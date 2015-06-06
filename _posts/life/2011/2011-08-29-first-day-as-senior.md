@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 开学第一天
 category: life
 tag: diary
 ---
 
-开学第一天
-===
 
 开学第一天。
 但是 我还是坚守在办公室。

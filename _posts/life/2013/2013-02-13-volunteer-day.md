@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 情人节快乐
 category: life
 tag: diary
 ---
 
-情人节快乐
-===
 
 呼呼，又是一年过去啦，这两天 @ainesmile 见过了爸爸妈妈，叔叔婶婶，姑姑舅舅，爷爷奶奶，堂亲表亲，一定得了脸盲症了，嗯。
 

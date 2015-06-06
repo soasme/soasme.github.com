@@ -1,11 +1,10 @@
 ---
 layout: post
+title: Locale UTF-8
 category: technology
 tag: svn
 ---
 
-Locale UTF-8
-===
 
 莫名其妙突然用svn的时候遇到任何操作都会报这个warning:
 

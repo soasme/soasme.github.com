@@ -1,11 +1,10 @@
 ---
 layout: post
+title: Sinatra Modular Route
 category: technology
 tag: sinatra
 ---
 
-Sinatra Modular Route
-===
 
 没有找到简单的Sinatra模块化后的路由方案。
 [Stack Overflow](http://stackoverflow.com/questions/2480607/using-cucumber-with-modular-sinatra-apps)上提到了了一种方法：

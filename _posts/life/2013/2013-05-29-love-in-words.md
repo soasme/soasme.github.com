@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 文字的意义
 category: life
 tag: diary
 ---
 
-文字的意义
-===
 
 就像 @ainesmile 随口po在G+ Twitter 上的每一句话都会强烈的扰动着我的神经一样；
 当她说我的博客随手写的东西让她思来想去时，我突然意识到: 我们被文字这家伙给搞了。

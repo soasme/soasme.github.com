@@ -1,13 +1,12 @@
 ---
 layout: post
+title: 临时解决gem无法安装的问题
 category: technology
 tag: gem
 ---
 
 
 
-临时解决gem无法安装的问题
-===
 
 就是这么个情况。不知道怎么解决ssl的问题了 哎。。。
 

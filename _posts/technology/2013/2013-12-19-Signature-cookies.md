@@ -1,11 +1,10 @@
 ---
 layout: post
+title: Signature cookies
 category: technology
 tag: web
 ---
 
-Signature cookies
-===
 
 由于client的数据是可以伪造的, 因此将数据存储到存到client要面临的问题只有一个, 那就是怎么防止数据被篡改.
 一个简单的办法是签名(signature).

@@ -2,10 +2,10 @@
 layout: post
 category: life
 tag: diary
+title: 老家的一天
 ---
 
-老家的一天
-===
+
 
 
 真是讽刺呢，十多年没在老家睡了。

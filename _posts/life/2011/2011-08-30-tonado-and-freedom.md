@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 台风 自由
 category: life
 tag: diary
 ---
 
-台风 自由
-===
 
 往年夏天末尾的时候，总爱说声 夏天，不要离我而去。
 

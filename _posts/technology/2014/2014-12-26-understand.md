@@ -1,10 +1,11 @@
 ---
 layout: post
 category: life
+title: 知乎哉? 不知也
 tag: diary
 ---
 
-# 知乎哉? 不知也
+
 
 昨晚 @ainesmile 把图灵机给我讲了一遍, 很清晰易懂, 图文并茂, 公式俱全.
 我再给 @ainesmile 讲解了树的遍历, 尽管她最后习题做到眉心冒烟 [烟雾~]

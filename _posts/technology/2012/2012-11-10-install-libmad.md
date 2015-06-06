@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 安装libmad
 category: technology
 tags: [audio, c]
 ---
 
-安装libmad
-===
 
 `libmad` 是一个解码 `mp3` 的开源库.
 

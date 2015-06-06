@@ -3,9 +3,8 @@ layout: post
 category: life
 tag: diary
 title: 太不可爱啦
+cover: /images/2015/unloveliness-cover.png
 ---
-
-# 太不可爱啦
 
 博客自从迁用Jekyll后，主打技术与琐事，风格沉闷了很多，靠妖，整个人都木木哒。
 

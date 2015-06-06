@@ -2,6 +2,7 @@
 layout: post
 category: technology
 tag: algorithm
+title: Tree traversal
 ---
 
 ### PostOrder Traversal For Tree (Not Using Recersive)

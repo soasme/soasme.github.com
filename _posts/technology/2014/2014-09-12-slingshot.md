@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: Slingshot
 tag: clojure
 ---
 
-# Slingshot
+
 
 Slingshot enhance try and throw for Clojure leveraging Clojure's capabilities.
 It provide `try+` and `throw+` that is 100% compatible with Clojure and Java's native try and throw both in source code and at runtime.

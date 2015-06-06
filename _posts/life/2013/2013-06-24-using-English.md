@@ -1,11 +1,10 @@
 ---
 layout: post
+title: Using English
 category: life
 tag: diary
 ---
 
-Using English
-===
 
 Well, the article entitled "Using English" instead of "Learning English".
 Yep, it's `using`.

@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: Network snippet
 tag: clojure
 ---
 
-# Network snippet
+
 
 在写 [beanstalk-clj] 的时候, 没有打算依赖更多的库, 于是裸写了 Socket 的交互:
 

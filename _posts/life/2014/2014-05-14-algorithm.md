@@ -1,10 +1,10 @@
 ---
 layout: post
 tag: diary
+title: 算法
 category: life
 ---
 
-# 算法
 
 过去的大半年里写了很多日记, 所以博客迟更好严重.
 最近会开始重新回到博客里.

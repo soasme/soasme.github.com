@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: Speed up `npm install` for jenkins builds
 tag: jenkins
 ---
 
-# Speed up `npm install` for jenkins builds
+
 
 We waste a large amount of time to wait every single jenkins job installing
 it's npm dependencies. This is awful to watch and it takes precious time

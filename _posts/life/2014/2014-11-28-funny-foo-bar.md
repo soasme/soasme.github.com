@@ -2,6 +2,7 @@
 layout: post
 category: life
 tag: diary
+title: 今天
 ---
 
 ## 超好吃的早饭

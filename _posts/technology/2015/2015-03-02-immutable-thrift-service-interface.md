@@ -1,13 +1,13 @@
 ---
 layout: post
 category: technology
-title: Immutable Thrift Service Interface
+title: Immutable thrift service interface
 tag:
 - pattern
 - microservice
 ---
 
-# Immutable thrift service interface
+
 
 ## About Immutable Infrastructure
 

@@ -2,10 +2,11 @@
 layout: post
 category: life
 tag: diary
+title: 西雅图不眠夜。
 ---
 
-西雅图不眠夜。
-==
+
+
 
 
 本想看完它，不过好多作业额，只看了1/3。

@@ -1,11 +1,10 @@
 ---
 layout: post
+title: Today? Toyear? 2009年过去了
 category: annals
 tag: annals
 ---
 
-Today? Toyear? 2009年过去了
-===
 
 2009年过去了，这是蜕变的一年。从未成年人变成成年人，从开始设计目标到逐步靠近目标，从想拥有一切到学会有舍有取，我自己觉得这都是蜕变。
  

@@ -1,11 +1,10 @@
 ---
 layout: post
+title: parrow多余的签名
 category: life
 tag: sparrow
 ---
 
-parrow多余的签名
-===
 
 免费的Sparrow签名档一直有两个签名：
 

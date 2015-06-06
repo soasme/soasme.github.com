@@ -1,11 +1,10 @@
 ---
 layout: post
+title: Douban bio v1
 category: life
 tag: diary
 ---
 
-Douban bio v1
-===
 
 已经毅然决然地退出了卖萌圈，现在是有着萌属性的深沉沧桑大叔，有萌不卖，接不接受都无所谓，做我想做的自己。
 

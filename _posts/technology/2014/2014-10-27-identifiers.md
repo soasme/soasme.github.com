@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: 标识
 tag: clojure
 ---
 
-# 标识
+
 
 自然标识(Natural Key, Natural Identifier): 是实体中存在的, 真实世界里被广泛接受的, 用来独一无二地识别自身的标识. 关键词: 独一无二, 自身存在. [1] 一个实体里有这样的标识, 在数据库设计中一般会被用来做主键(Primary Key).
 

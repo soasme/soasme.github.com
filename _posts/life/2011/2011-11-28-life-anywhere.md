@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 随遇而安
 category: life
 tag: diary
 ---
 
-随遇而安
-===
 
 这日子可以以各种方式度过。
 或忙碌。

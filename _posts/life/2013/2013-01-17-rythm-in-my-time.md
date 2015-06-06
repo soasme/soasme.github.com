@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 我时光里的旋律
 category: life
 tag: diary
 ---
 
-我时光里的旋律
-===
 
 今日认真筛选FM兆赫的歌曲，甚为头疼。想来一直以来都是这样呢。
 

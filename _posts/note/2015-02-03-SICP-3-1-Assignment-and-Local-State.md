@@ -1,11 +1,11 @@
 ---
 layout: post
 category: technology
-tag: SICP
 title: SICP 3.1 Assignment and Local State
+tag: SICP
 ---
 
-# SICP 3.1 Assignment and Local State
+
 
 [Read Book](http://sarabander.github.io/sicp/html/3_002e1.xhtml)
 

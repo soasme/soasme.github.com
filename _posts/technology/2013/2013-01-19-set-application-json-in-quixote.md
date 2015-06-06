@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 在Quixote中设置content-type为application/json
 category: technology
 tag: quixote
 ---
 
-在Quixote中设置content-type为application/json
-===
 
 在[Cookbook](http://quixote.ca/qx/QuixoteCookbook.html) 与[WorldIndex](http://quixote.ca/qx/WordIndex.html)并没有找到比较好的办法，不是我找的姿势不对就是文档写的太次。
 

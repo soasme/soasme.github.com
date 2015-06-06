@@ -2,10 +2,9 @@
 layout: post
 category: life
 tag: diary
+title: 最近的歌手
 ---
 
-最近的歌手
-===
 
 2012-05-31【Goodbye Lullaby】
 

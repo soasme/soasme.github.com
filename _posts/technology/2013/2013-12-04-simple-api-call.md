@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 一个简单的API调用
 category: technology
 tag: api
 ---
 
-一个简单的API调用
-===
 
 按照设想中的调用:
 

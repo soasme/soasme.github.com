@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 忙里偷闲
 category: life
 tag: diary
 ---
 
-忙里偷闲
-===
 
 这两天真的要忙透了。
 怎么忙也忙不完的感觉。

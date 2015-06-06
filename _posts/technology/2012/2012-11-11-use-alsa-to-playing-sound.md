@@ -2,12 +2,11 @@
 layout: post
 category: technology
 tags: [audio]
+title: 使用alsa播放声音
 ---
 
-使用alsa播放声音
-=====
 
-    ➜  minimad  ./snd 
+    ➜  minimad  ./snd
     ALSA lib pcm_hw.c:1401:(_snd_pcm_hw_open) Invalid value for card
     Error opening PCM device plughw:0,0, retcode: -2
     ➜  minimad  ls /dev/snd -l

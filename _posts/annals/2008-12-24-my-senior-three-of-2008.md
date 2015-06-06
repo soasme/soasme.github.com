@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 年末盘点2008高考纪实
 category: annals
 tag: annals
 ---
 
-年末盘点2008高考纪实
-===
 
 1月1，我昏昏沉沉地睡了一个早上，下午念书，迎接一个月后的月考。 
 

@@ -1,11 +1,9 @@
 ---
 layout: post
 category: life
-tag: thought
 title: 2015 一月上旬的灵感
+tag: thought
 ---
-
-# 2015 一月上旬的灵感
 
 ## Web世界的抽象
 

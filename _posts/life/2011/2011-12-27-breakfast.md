@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 早饭
 category: life
 tag: diary
 ---
 
-早饭
-===
 
 昨天犯贱居然不吃早餐各种折磨，
 今天一大早就把早餐解决了。。

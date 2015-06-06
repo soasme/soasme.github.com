@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: Alter multimethod
 tag: clojure
 ---
 
-# Alter multimethod
+
 
 ### Multimethod
 

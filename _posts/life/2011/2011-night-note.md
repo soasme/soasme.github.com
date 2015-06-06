@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 暗夜音符
 category: life
 tag: diary
 ---
 
-暗夜音符
-===
 
     静止的河水浮着血腥的红色剧毒
     老街的枯木缠绕着恶魔飞走的恐怖

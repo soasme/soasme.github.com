@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: Macro `->`
 tag: clojure
 ---
 
-# Macro `->`
+
 
 
 Method chaining, also known as named parameter idiom, is a common syntax for invoking multiple method calls in object-oriented programming languages. Each method returns an object, allowing the calls to be chained together in a single statement.

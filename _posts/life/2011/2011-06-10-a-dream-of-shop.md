@@ -2,10 +2,10 @@
 layout: post
 category: life
 tag: diary
+title: 小店的梦
 ---
 
-小店的梦
-===
+
 
 人们是从何时起，忘却了儿时的理想？
 小强如是说。

@@ -1,11 +1,10 @@
 ---
 layout: post
+title: You Can't Write Perfect Software
 category: technology
 tag: software
 ---
 
-You Can't Write Perfect Software
-===
 
 It is a hard time. 
 You were a pursuer of perfect software for a long time but had never reached it.

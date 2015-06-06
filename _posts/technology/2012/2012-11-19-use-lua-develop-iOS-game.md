@@ -2,10 +2,11 @@
 layout: post
 category: technology
 tags: [iOS, game, lua]
+title: 使用lua开发iOS游戏
 ---
 
-使用lua开发iOS游戏
-=====
+
+
 
 
 由于 cocos2d-x 内置了 `lua engine` 这使得我们可以通过lua开发iOS游戏。
@@ -18,7 +19,7 @@ tags: [iOS, game, lua]
 
 从 `~/Library/Developer/Xcode/DerivedData/testlua-asftbziwkwijygeemeggirrjspoc/Build/Products/Debug-iphonesimulator/` 可以找到 `testlua.app` (这个地址自己灵活选定 DeriveData 后面是 项目名+一串字符), 复制到我们的开发目录, 比如 `~/work/game/` , 这是一个目录，所以可以用 `cp -R testlua.app ~/work/game` 来复制.
 
-将以下脚本保存为 `serve.sh` 放在 `game` 下( 文件自动检查 `testlua.app` 中我们即将更新的脚本的更新并重启虚拟机中程序), 
+将以下脚本保存为 `serve.sh` 放在 `game` 下( 文件自动检查 `testlua.app` 中我们即将更新的脚本的更新并重启虚拟机中程序),
 
     #!/usr/bin/php
     <?php

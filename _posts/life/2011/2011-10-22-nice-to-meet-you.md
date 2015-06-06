@@ -1,11 +1,10 @@
 ---
 layout: post
+title: Nice to meet you.
 category: life
 tag: diary
 ---
 
-Nice to meet you.
-===
 
 其实，这也是我很想对你说的话。
 

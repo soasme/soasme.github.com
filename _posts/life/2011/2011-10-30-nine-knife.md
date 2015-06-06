@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 九把刀
 category: life
 tag: diary
 ---
 
-九把刀
-===
 
 这个下午。我看了一部小说。
 那些年，我们一起追的女孩。

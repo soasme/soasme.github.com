@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 妖风寒雨
 category: life
 tag: diary
 ---
 
-妖风寒雨
-===
 
 天气如预料般的冷下来了。
 昨天还是前天，厦门能把人热死。

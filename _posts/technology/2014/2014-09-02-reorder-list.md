@@ -1,12 +1,13 @@
 ---
 layout: post
 category: technology
+title: Reorder list
 tag:
 - clojure
 - algorithm
 ---
 
-# Reorder list
+
 
 ### Problem [1]
 

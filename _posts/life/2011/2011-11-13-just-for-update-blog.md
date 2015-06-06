@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 吐槽无力的日子
 category: life
 tag: diary
 ---
 
-吐槽无力的日子
-===
 
 我是长期不更新会死星人，无事吐槽也得码点废话什么的。
 

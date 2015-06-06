@@ -1,11 +1,10 @@
 ---
 layout: post
+title: Life is short.
 category: life
 tag: diary
 ---
 
-Life is short.
-===
 
 有一种说法,
 

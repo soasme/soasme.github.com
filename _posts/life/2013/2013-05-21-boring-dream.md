@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 无聊的梦想
 category: life
 tags: diary
 ---
 
-无聊的梦想
-===
 
 
 

@@ -1,11 +1,10 @@
 ---
 layout: post
+title: My So Called Life。
 category: life
 tag: diary
 ---
 
-My So Called Life。
-===
 
 路灯和车灯照亮了这个漆黑凌晨 离家踏上了今天的旅途。
 

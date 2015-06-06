@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 第9周周末
 category: life
 tag: diary
 ---
 
-第9周周末
-===
 
 
 周六在芍药居新开的未来广场里面和 @ainesmile 小逛了下，周日和 @ainesmile 以及墨墨老师在芍药居旁边就近吃了一餐，敲了墨墨老师一笔。

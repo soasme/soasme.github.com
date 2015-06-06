@@ -1,11 +1,9 @@
 ---
 layout: post
 category: life
-tag: diary
 title: Evernote 中的结构化数据
+tag: diary
 ---
-
-# Evernote 中的结构化数据
 
 用了很多互联网工具后, 究其本源, 惊觉无甚意义.
 所有的互联网应用基本上都是对

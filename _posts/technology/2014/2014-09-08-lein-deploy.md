@@ -1,10 +1,11 @@
 ---
 layout: post
 category: technology
+title: Deploy clojre jar to clojars
 tag: clojure
 ---
 
-# Deploy clojre jar to clojars
+
 
 ## Step 1: Install gpg and generate key
 

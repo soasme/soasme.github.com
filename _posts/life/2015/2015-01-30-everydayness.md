@@ -1,11 +1,9 @@
 ---
 layout: post
 category: life
-tag: diary
 title: 平淡
+tag: diary
 ---
-
-# 平淡
 
 许多年前, 你问过我, 如果日子趋于平淡, 你是否会恐惧?
 我回答道, 那正合我意, 我只想和你平淡的走完这一生.

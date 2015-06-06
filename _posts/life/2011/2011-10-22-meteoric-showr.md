@@ -1,11 +1,10 @@
 ---
 layout: post
+title: 流星雨
 category: life
 tag: diary
 ---
 
-流星雨
-===
 
 好久没有看流星雨了。
 昨晚有流星雨的。
