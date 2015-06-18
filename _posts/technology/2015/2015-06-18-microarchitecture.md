@@ -11,7 +11,7 @@ I thought it might helps to give a brief review for my several days' work.
 
 ### Problem I Met
 
-Three system involved a game of data passing.
+Three systems involve into a game of data passing.
 
 My silent spiders, controlled by System `Spiderman`, will crawl
  information through the great internet.
@@ -19,13 +19,19 @@ System `Manhattan` will gather working achievement produced by spiders and
 my lovely workmates.
 These results of work will reflect to System `Cambridge`.
 
-The picture below, with a boundary rounded `Manhattan`, describes a general view of these systems:
+The picture below, with a boundary around `Manhattan`, describes a general view of these systems:
 
 ![](/images/2015/manhattan-architecture.png)
 
 Aha, you got it, I need to design and implement system `Manhattan` from scratch.
 
 ### Design Flow, *Make RESTful Contract*
+
+It's hard to guess the behavior other components will act if we chose not to
+constraint them, since they're self-independence.
+
+A well designed and implemented contract determines how these systems interact
+with each other, and in which way we will program.
 
 Microservices are often integrated using REST over HTTP.
 
@@ -36,9 +42,11 @@ So I design data flow as below:
 
 ![](/images/2015/manhattan-dataflow.png)
 
-I need cambridge offering an API `POST /intra/items/sale/:type/:id`.
+Calls crossover boundaries are via RESTful HTTP requsts.
 
-It has some predicatable behaviors:
+I need `Cambridge` offering an API `POST /intra/items/sale/:type/:id`.
+
+It has some predictable behaviors:
 
 * Response 204 if set success;
 * Response 403 if auth fail;
@@ -47,8 +55,11 @@ It has some predicatable behaviors:
 
 ### Follow contract
 
+
 ```python
 try:
+    url = make_url(type, id)
+    data = make_data(price, inventory)
     resp = requests.post(url, data=data)
     status = resp.status_code
     if status == 204:
@@ -119,12 +130,6 @@ def test_product_upload_no_longer(product, binding, requests):
 ```
 
 ### Summary
-
-It's hard to guess the behavior other components will act if we chose not to
-constraint them, since they're self-independence.
-
-A well designed and implemented contract determines how these systems interact
-with each other, and in which way we will program.
 
 * Contract is probably one of the most important thing in microservice architecture.
 * Design a good contract, just follow widely-used RESTful API-style.
