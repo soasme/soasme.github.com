@@ -1,7 +1,7 @@
 ---
 layout: post
 category: technology
-title: Fix zsh tput unknown terminal and fish Could not set up terminal
+title: Fix zsh tput unknown terminal
 tag: system
 ---
 

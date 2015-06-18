@@ -1,35 +1,24 @@
 ---
 layout: default
 title: 存档
+archive: true
 permalink: /archive/
-keywords:
-  - blog
-  - archive
 ---
-  {% capture post_year1 %}{{ 'now' | date: '%Y' }}{% endcapture %}
-<h2>{{ post_year1 }}</h2>
-<ul class="post_info postsList">
-{% for post in site.posts %}
-{% capture post_year2 %}{{ post.date | date: '%Y' }}{% endcapture %}
-{% if post_year1 != post_year2 %}
-{% assign post_year1 = post_year2 %}
-</ul>
-<h2>{{ post_year1 }}</h2>
-<ul class="post_info postsList">
-{% endif %}
-        <div style="width:100%;overflow:hidden;">
-            <span style="float:left; border-bottom: solid 1px white;">
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                {% for category in post.category %}
-                &nbsp;&nbsp;<span style="border-radius:3px;padding:1px 3px;font-size:5px;background:#eee;color:#666;">{{ category }}</span>
-                {% endfor %}
-                {% for tag in post.tags %}
-                &nbsp;&nbsp;<span style="border-radius:3px;padding:1px 3px;font-size:5px;background:#eee;color:#666;">{{ tag }}</span>
-                {% endfor %}
-            </span>
-            <span style="float:right">{{ post.date | date: "%b %d, %Y" }}</span>
-        </div>
-        <div style="clear:both;"></div>
-
-{% endfor %}
-</ul>
+<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
+        <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed/index.xml">Subscribe</a>
+    </nav>
+</header>
+<main class="content" role="main">
+    <article class="post">
+      <section class="archive">
+          <h5>Archive</h5>
+          <ul>
+              {% for post in site.posts %}
+                  <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}    
+          </ul>
+      </section>
+    </article>
+</main>
