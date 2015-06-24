@@ -3,3 +3,4 @@ _site/
 resume/*.aux
 resume/*.log
 resume/*.out
+.sass-cache/
