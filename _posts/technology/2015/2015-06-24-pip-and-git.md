@@ -16,6 +16,11 @@ git+https://ghe.domain.com/org/repo.git#egg=repo
 git+git@ghe.domain.com:org/repo.git#egg=repo
 ```
 
+We can also passing branch names, a commit hash or a tag name as an url anchor:
+
+```
+git+ssh://git@ghe.domain.com/org/repo.git@0.1.0#egg=repo
+```
 
 We must know there are 2 types of installing mode:
 
@@ -25,6 +30,10 @@ We must know there are 2 types of installing mode:
 ```
 -e git+ssh://git@ghe.domain.com/org/repo.git#egg=repo
 ```
+
+Q: How to choose these modes?
+
+A: If you have tagged git commit to a specified version, just use non-editable mode.
 
 Normally, we will append version to egg is used by pip in its dependency logic to identify the project prior to pip downloading and analyzing the metadata. The optional "version" component of the egg name is extremely important if you want to upgrade library in non-editable mode. The format of egg is like `#egg=library-0.1.0`:
 
