@@ -27,9 +27,6 @@ Solution:
 Basic Thought:
 
 1. Parse
-    * to nifix expression
-    * to prefix expression
-    * to postfix expression
 2. Evaluate
 
 I make a quick but dirty solution at first:
@@ -112,7 +109,3 @@ A solution based on priority-map is better (assuming tokens have been parsed alr
                     (calc (cons (f op left right) nextexp))
                     (f op left (calc (cddr tokens))))))))
 {% endhighlight %}
-
-To be honestly, the nifix expression make evaluation much harder.
-Parsing string to a prefix notation makes eval  much like lisp procedure evaluating,
-while parsing string to a postfix expression, aka RPN (Reverse Polish notation), just make problem easier.
