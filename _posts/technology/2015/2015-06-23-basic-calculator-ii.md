@@ -134,19 +134,19 @@ That needs us offering 2 stacks:
                                 (cddr operands))))))
   (define (calc operators operands num chars)
     (cond ((and (eq? #f num) (null? chars)) (evaluate operators operands)) ; ⑦
-          ((and (not (eq? #f num)) (null? chars)) (calc operators (cons num operands) #f chars)) ; ️⑥
-          ((char-whitespace? (car chars)) (calc operators operands num (cdr chars))) ; 1⃣️
+          ((and (not (eq? #f num)) (null? chars)) (calc operators (cons num operands) #f chars)) ; ⑥
+          ((char-whitespace? (car chars)) (calc operators operands num (cdr chars))) ; ①
           ((char-numeric? (car chars)) (calc operators
                                              operands
                                              (+ (if (eq? #f num) 0 (* 10 num))
                                                 (- (char->integer (car chars))
                                                    (char->integer #\0)))
-                                             (cdr chars))) ; 2⃣️
-          ((null? operators) (calc (cons (car chars) operators) (cons num operands) #f (cdr chars))) ; 3⃣️
+                                             (cdr chars))) ; ②
+          ((null? operators) (calc (cons (car chars) operators) (cons num operands) #f (cdr chars))) ; ③
           (else (let* ((op (car chars))
                        (lastop (car operators)))
                   (if (prior? op lastop)
-                      (calc (cons op operators) (cons num operands) #f (cdr chars)) ; 4⃣️
+                      (calc (cons op operators) (cons num operands) #f (cdr chars)) ; ④
                       (calc (cons op (cdr operators))
                             (cons (f lastop
                                      num
@@ -163,7 +163,7 @@ That needs us offering 2 stacks:
 (calc2 " 1 * 1 + 2 ") ; 3
 (calc2 " 1 * 1 + 2 * 3 ") ; 7
 (calc2 " 1 + 2 * 3 + 4 ") ; 11
-{% endhighlight}
+{% endhighlight %}
 
 Let's take a deep look inside an evaluation: `" 10+2*3+4":
 
