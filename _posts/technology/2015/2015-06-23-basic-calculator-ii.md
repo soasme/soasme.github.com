@@ -130,23 +130,40 @@ That needs us offering 2 stacks:
   (define (evaluate operators operands)
     (cond ((null? (cdr operands)) (car operands))
           (else (evaluate (cdr operators)
-                          (cons (f (car operators) (car operands) (cadr operands))
-                                (cddr operands))))))
+                          (cons
+                            (f (car operators)
+                               (car operands)
+                               (cadr operands))
+                               (cddr operands))))))
   (define (calc operators operands num chars)
-    (cond ((and (eq? #f num) (null? chars)) (evaluate operators operands)) ; ⑦
-          ((and (not (eq? #f num)) (null? chars)) (calc operators (cons num operands) #f chars)) ; ⑥
-          ((char-whitespace? (car chars)) (calc operators operands num (cdr chars))) ; ①
-          ((char-numeric? (car chars)) (calc operators
-                                             operands
-                                             (+ (if (eq? #f num) 0 (* 10 num))
-                                                (- (char->integer (car chars))
-                                                   (char->integer #\0)))
-                                             (cdr chars))) ; ②
-          ((null? operators) (calc (cons (car chars) operators) (cons num operands) #f (cdr chars))) ; ③
+    (cond ((and (eq? #f num) (null? chars))
+           (evaluate operators operands)) ; ⑦
+
+          ((and (not (eq? #f num)) (null? chars))
+          (calc operators (cons num operands) #f chars)) ; ⑥
+
+          ((char-whitespace? (car chars))
+          (calc operators operands num (cdr chars))) ; ①
+
+          ((char-numeric? (car chars))
+          (calc operators
+            operands
+            (+ (if (eq? #f num) 0 (* 10 num))
+              (- (char->integer (car chars))
+              (char->integer #\0)))
+            (cdr chars))) ; ②
+
+          ((null? operators)
+          (calc (cons (car chars) operators)
+                (cons num operands)
+                #f
+                (cdr chars))) ; ③
+
           (else (let* ((op (car chars))
                        (lastop (car operators)))
                   (if (prior? op lastop)
-                      (calc (cons op operators) (cons num operands) #f (cdr chars)) ; ④
+                      (calc (cons op operators)
+                            (cons num operands) #f (cdr chars)) ; ④
                       (calc (cons op (cdr operators))
                             (cons (f lastop
                                      num
