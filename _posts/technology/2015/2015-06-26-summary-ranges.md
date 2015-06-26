@@ -1,7 +1,7 @@
 ---
 layout: post
 category: technology
-title: Summary Ranges
+title: Leetcode 228: Summary Ranges
 ---
 
 > Given a sorted integer array without duplicates, return the summary of its ranges.
