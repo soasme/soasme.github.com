@@ -144,3 +144,30 @@ Here is a praticable entire solution:
 (summary-ranges '(0 1 3 4)) ; '("0->1" "3->4")
 (summary-ranges '(0 1 3 4 6 7 8 10)) ; '("0->1" "3->4" "6->8" "10")
 {% endhighlight %}
+
+
+Python solution attached:
+
+{% highlight python %}
+class Solution:
+    # @param {integer[]} nums
+    # @return {string[]}
+    def summaryRanges(self, nums):
+        if not nums:
+            return []
+        length = len(nums)
+        if length == 1:
+            return ["%s" % nums[0]]
+        if nums[-1] - nums[0] == length - 1:
+            return ["%s->%s" % (nums[0], nums[-1])]
+
+        left = self.summaryRanges(nums[:length / 2])
+        right = self.summaryRanges(nums[length / 2:])
+        if nums[length / 2 - 1] + 1 == nums[length /2]:
+            return left[:-1] + ["%s->%s" % (
+                '->' in left[-1] and left[-1].split('->')[0] or left[-1],
+                '->' in right[0] and right[0].split('->')[1] or right[0]
+            )] + right[1:]
+        else:
+            return left + right # ["1", "3"]
+{% endhighlight %}
