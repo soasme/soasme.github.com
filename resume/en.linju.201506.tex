@@ -1,0 +1,218 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cies Resume/CV
+% LaTeX Template
+% Version 1.1 (20/7/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Cies Breijs (cies@kde.nl)
+% https://github.com/cies/resume with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper]{article} % Font size (10-12pt) and paper size (a4paper, letterpaper, legalpaper, etc)
+
+\include{structure} % Include structure.tex which contains packages and document layout definitions
+
+\hyphenation{Some-long-word} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\maintitle{Lin Ju}{February 11, 1991}  % Your name and date of birth or subtitle
+
+\noindent\href{mailto:soasme@gmail.com}{soasme@gmail.com}\bull
+\textsmaller{+}86 186-0087-9497\bull @soasme \textit{(Twitter)}\bull
+\href{http://www.soasme.com}{www.soasme.com}\\ % Your URL
+\spacedhrule{0.9em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%   SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Summary} % Root section title
+
+\vspace{-1.3em} % Reduce whitespace after the Summary heading and the two-column content
+
+\begin{multicols}{2}  % Start a two-column layout
+  %\noindent \textit{A summary of your interests, achievements, history, topic of study or any other short summary of your professional life.}\\\\
+  Lin Ju has a wide knowledge about web application and dev-ops. He is a passionate leaner with endless curiosity and a brave explorer with no fears of jumping out of the comfort zone. He likes using different languages, drilling deep into computer system, finding solutions about algorithm puzzles. He always chases for a better working-flow, a cleaner implementation without bad-smell, a transparent communication. Although working mainly in back-end, he also likes writing front-end code: js, java, obj-c.
+\end{multicols}
+
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%   EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Experience} % Top level section
+
+\headedsection {
+  \href{
+    http://read.douban.com
+  } {
+    Douban Read
+  }
+} {
+  \textsc{Beijing, China}
+} {
+  \headedsubsection {
+    Product Development Engineer
+  } {
+    Apr '13 -- March '15
+  } {
+    \bodytext{
+      \begin{itemize}
+      \item Design and implementing a new version of robust, testable, document-autogenration API.
+      \item Lead the refactoring project of extracting ORM manipulation with builtin cache mechanism, with 30\% codes reduced in Model layer.
+      \item Maintain Jenkins CI system.
+      \item Maintain microstrategy BI system: importing fact and dimension data, generating report forms by drilling these data.
+      \item Write hundreds of py.test fixtures helping making test much more readable and Several types of tests: unit test, api test, api v2 test, ajax interface test, page element validation, integration test based on selenium, thrift service test, python lint, etc. Help improving 20\% code coverage.
+      \end{itemize}
+    }
+  }
+}
+
+\headedsection {
+  \href{http://book.douban.com}{Douban Book}
+} {
+  \textsc{Beijing, China}
+} {
+  \headedsubsection {
+    Product Development Engineer
+  } {
+    Jun '12 -- Apr '13
+  } {
+    \bodytext{
+      \begin{itemize}
+      \item Implement a system synchronizing product price and inventory from almost all book e-shops in China, such as Amazon, Jingdong, Dangdang, etc. There are nearly 16+ million subjects updating every day never stopped.
+      \item Participating on the Rebuilding \& Refactoring process of book.douban.com which used by millions of users everyday. Decoupled book module from others to archive independent deployment.
+      \item Replaced PTL template engine with Mako. Thousands lines of code fewer, and smoothly released without breaking anything.
+      \end{itemize}
+    }
+  }
+}
+
+\headedsection {
+  \href{http://www.xiaojio.com}{Chen Hong}
+} {
+  \textsc{Amoy, China}
+} {
+  \headedsubsection {
+    Web Developer
+  } {
+    May '10 -- Jan '12
+  } {
+    \bodytext{
+      \begin{itemize}
+      \item Secondary develop a Groupon-alike website  based on a commercial solution using PHP, Javascript.
+      \item Implement a marketing system from scratch using `Laravel`, including goods, order, payment, coupon, sms modules, etc.
+      \item Develop a CMS system helping editors write posts about Amoy local shops.
+      \item Secondary develop a ECShop-based online shopping mall, mainly customize front-end modules.
+      \item Maintain sites above: serving them on virtual hosts, deploying them via a free plan named springloops.
+      \end{itemize}
+    }
+  }
+}
+
+\begin{center}
+  \textit{Please refer to \href{http://www.linkedin.com/in/linju}{my Linkedin profile} for the complete list of work experiences along with recommendations.}
+\end{center}
+
+
+\spacedhrule{-0.2em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Education} % Top level section
+
+\headedsection {
+  Jimei University
+} {
+  \textsc{Amoy, China}
+} {
+  \headedsubsection {
+    Bachelor degree in Software Engineering
+  } {
+    2008 -- 2012
+  } {
+    \bodytext{
+      Focussed on computer science(\acr{Data Structure}/\acr{Operating System}/\acr{Algorithm}),
+      programming languages (\acr{C}/\acr{Java}/\acr{C\#}),
+      robot simulation(\acr{Graphic}/\acr{AI})
+      and the semantic web technology stack (\acr{JSP}/\acr{.NET}/\acr{MSSQL}).
+    }
+  }
+}
+
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%   SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Skills} % Top level section
+
+\inlineheadsection {
+  Natural languages:
+} {
+  Mandarin Chinese\textit{(mother tongue)},
+  English \textit{(full professional proficiency)}.
+}
+
+\inlineheadsection {
+  Computer languages:
+} {
+  Python\textit{(Master)},
+  Javascript\textit{(Master)},
+  C\textit{(prior experience)},
+  Java\textit{(prior experience)},
+}
+
+\inlineheadsection {
+  Operating System:
+} {
+  Linux \textit{(expert in using git, awk, sed, shell, etc)},
+  OSX \textit{(expert, using it everyday)}.
+}
+
+\inlineheadsection {
+  Technical specialties:
+} {
+  Software design and implementation, with(in) a team.
+  I love \textit{Ruby}, \textit{Clojure}, \textit{Scheme}, \textit{Rust}.
+  Solid knowledge of web technologies:\ \acr{Front end stack(\textit{React}, \textit{Backbone})}, \acr{RESTful}, \acr{Continouous Integration\textit{(Jenkins)}} and \acr{DevOps(\textit{ansible}, \textit{docker})}.
+}
+
+
+% \spacedhrule{1.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%   INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+% \roottitle{Interests} % Top level section
+
+% \inlineheadsection {
+%  Non-exhaustive and in alphabetical order:
+% } {
+%  Open source, game development, science, and vegetarian cooking.
+% }
+
+
+\end{document}
