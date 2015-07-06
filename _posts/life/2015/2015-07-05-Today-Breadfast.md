@@ -6,7 +6,7 @@ title: 煎饼果子
 ---
 
 1. 
-![](images/2015/cookie-step-1.jpg)
+![](/images/2015/cookie-step-1.jpg)
 
 2.
-![](images/2015/cookie-step-2.jpg)
+![](/images/2015/cookie-step-2.jpg)
