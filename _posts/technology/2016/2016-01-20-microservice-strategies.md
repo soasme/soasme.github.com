@@ -1,7 +1,7 @@
 ---
 layout: post
 category: technology
-title: 微服务的策略
+title: 一些微服务的策略
 ---
 
 ## 通信
