@@ -99,7 +99,7 @@ title: 礼物说追踪系统
                 - python scripts/somescript.py
                 - python manage.py runserver
         - 调用时机
-            - http request: 由于目前基于 REST 的 microservice 方案性能还不确定是否足够好，span 的数据会在传输层前后记录两笔注解：数据序列化/反序列化的开销。
+            - http request: 由于目前基于 RESTful 的 microservice 方案性能还不确定是否足够好，span 的数据会在传输层前后记录两笔注解：数据序列化/反序列化的开销。
                 - before request
                 - after response
             - message queue
@@ -116,6 +116,7 @@ title: 礼物说追踪系统
 
 - [distributed tracing in 5 minutes](http://www.slideshare.net/dkuebrich/distributed-tracing-in-5-minutes)
 - [Dapper, a Large-Scale Distributed Systems Tracing Infrastructure](http://research.google.com/pubs/pub36356.html)
+- [Zipkin - Strangeloop](http://www.slideshare.net/johanoskarsson/zipkin-strangeloop)
 - [X-Trace](http://x-trace.net/pubs/xtr-nsdi07.pdf)
 - [Zipkin](https://twitter.github.io/zipkin/index.html)
 - [Fluentd can connect to Zipkin Collector using fluent-plugin-scribe. You can trace timing data with Fluentd and Zipkin :)](https://twitter.com/fluentd/status/474255256197804032)
