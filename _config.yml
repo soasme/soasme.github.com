@@ -3,8 +3,6 @@ description: "Lin Ju's Blog"
 meta_description: "Your New Jekyll Site, Blogging about stuffs"
 url: "http://www.soasme.com"
 author: "soasme"
-markdown: redcarpet
-highlighter: pygments
 
 logo: false
 paginate: 15
@@ -12,3 +10,4 @@ baseurl: "/"
 permalink: "/:year/:month/:day/:title"
 domain_name: "http://www.soasme.com"
 google_analytics: 'UA-36183732-1'
+gems: [jekyll-paginate]
