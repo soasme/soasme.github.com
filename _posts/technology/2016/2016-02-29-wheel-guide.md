@@ -51,7 +51,7 @@ Wheel 文件的文件名包含了诸多重要信息，注入包名，版本，�
 
 ### References
 
-[Wheel 与 Egg 的比较](http://lucumr.pocoo.org/2014/1/27/python-on-wheels/)
-[Wheel History](http://wheel.readthedocs.org/en/latest/)
-[PEP 0427 - The Wheel Binary Package Format 1.0](https://www.python.org/dev/peps/pep-0427/)
-[DevPI](http://doc.devpi.net/latest/)
+- [Wheel 与 Egg 的比较](http://lucumr.pocoo.org/2014/1/27/python-on-wheels/)
+- [Wheel History](http://wheel.readthedocs.org/en/latest/)
+- [PEP 0427 - The Wheel Binary Package Format 1.0](https://www.python.org/dev/peps/pep-0427/)
+- [DevPI](http://doc.devpi.net/latest/)
