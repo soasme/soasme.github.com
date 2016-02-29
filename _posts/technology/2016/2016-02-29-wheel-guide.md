@@ -49,7 +49,9 @@ Wheel 文件的文件名包含了诸多重要信息，注入包名，版本，�
 
 可以使用一款叫做 devpi 的软件镜像和缓存 PyPI 包，上传和下载私有 wheel 包。
 
-[Wheel 与 Egg 的比较]: http://lucumr.pocoo.org/2014/1/27/python-on-wheels/
-[Wheel History]: http://wheel.readthedocs.org/en/latest/
-[PEP 0427 - The Wheel Binary Package Format 1.0]: https://www.python.org/dev/peps/pep-0427/
+### References
+
+[Wheel 与 Egg 的比较](http://lucumr.pocoo.org/2014/1/27/python-on-wheels/)
+[Wheel History](http://wheel.readthedocs.org/en/latest/)
+[PEP 0427 - The Wheel Binary Package Format 1.0](https://www.python.org/dev/peps/pep-0427/)
 [DevPI](http://doc.devpi.net/latest/)
