@@ -30,6 +30,7 @@ title: 几个必设的 Nginx 参数
 ## ssl
 
 将 SSL 证书放好，指定 ssh_certificate, ssh_certificat_key.
+指定协议，千万不要把 SSLv3 之类的货色丢进去。
 
     ssl_certificate /etc/nginx/ssl/bundle.crt;
     ssl_certificate_key /etc/nginx/ssl/perm.key;
