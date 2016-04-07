@@ -1,10 +1,10 @@
 ---
 layout: post
 category: technology
-title: 12 Factory Deployment
+title: 12 Factor of Fapistrano Deployments
 ---
 
-Fapistrano is not a silver-bullet, you can possibly mess up deployment process on wrongly
+[Fapistrano](https://github.com/liwushuo/fapistrano) is not a silver-bullet, you can possibly mess up deployment process on wrongly
 configuring you application.
 
 Following the guideline of `The Twelve-Factor App` may reduce potential traps.
