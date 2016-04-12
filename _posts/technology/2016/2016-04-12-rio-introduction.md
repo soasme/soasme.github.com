@@ -10,7 +10,7 @@ programming is widely used in GUI development. Since microservices architecture
 is thriving these year, a demand to send messages from one system to many other
 systems is rising. Rio is a system trying to solve this problem.
 
-Rio is standing on the shoulders of giants: Flask + Celery. In Rio, there are a
+[Rio] is standing on the shoulders of giants: Flask + Celery. In Rio, there are a
 job queue playing the role of main loop, and once message sent to job queue,
 a bunch of HTTP webhooks will be triggered simultaneously. Logging and
 monitoring are important task as well in Rio. You can easily find out
@@ -56,3 +56,4 @@ hand, as consumer of the message does not have to keep listening on message
 queue, it just provides an handler, to which consumer may be called or no.
 As a result, both two kinds of system need only behave theirselves.
 
+[Rio]: https://github.com/soasme/rio
