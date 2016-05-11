@@ -77,6 +77,7 @@ After all, I have to admit that it still misses some components:
 * service health monitoring
 * service discovery (we are pushing hosts to /etc/hosts now)
 
-It also leave many questions to me.
+It still leaves loads of questions to me.
 The architecture, to my certain knowledge, is not a one-day work.
-It evolves every day.
+I will add missing components, collect solutions on solving problems during next phase,
+and draw another blueprint at that time. :)
