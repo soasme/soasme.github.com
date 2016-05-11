@@ -58,7 +58,7 @@ Subscribers should register subscription to message broker.
 * Nginx instance as user request load balancer
 * Another Nginx instance as microservices load balancer
 * A tornado application as gateway
-* Multiple language implement of microservices
+* Microservices are driven by multiple web frameworks
   * Flask
   * Django
   * Spring
