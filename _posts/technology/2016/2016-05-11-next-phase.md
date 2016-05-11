@@ -13,22 +13,22 @@ I am trying to split big code base into many small but easily maintained service
 Although I am not mature at architecture, the system design decision has to be made.
 This is a graph of my ideal architecture for our system in the next phase:
 
-    <img src='http://g.gravizo.com/g?
-      digraph G {
-        gateway -> service1;
-        gateway -> service2;
-        gateway -> service3;
-        gateway -> service4;
-        service1 -> message_broker;
-        service2 -> message_broker;
-        service3 -> message_broker;
-        service4 -> message_broker;
-        message_broker -> service1;
-        message_broker -> service2;
-        message_broker -> service3;
-        message_broker -> service4;
-      }
-    '>
+<img src='http://g.gravizo.com/g?
+    digraph G {
+    gateway -> service1;
+    gateway -> service2;
+    gateway -> service3;
+    gateway -> service4;
+    service1 -> message_broker;
+    service2 -> message_broker;
+    service3 -> message_broker;
+    service4 -> message_broker;
+    message_broker -> service1;
+    message_broker -> service2;
+    message_broker -> service3;
+    message_broker -> service4;
+    }
+'>
 
 
 ### gateway
@@ -36,12 +36,11 @@ This is a graph of my ideal architecture for our system in the next phase:
 The gateway, like glue, combines all the services.
 It should not have complex logic.
 
-What it does is to call services and build them to a
-final result, JSON HTTP mostly in our use case.
+All it does is to call services and build their results into, JSON HTTP in our use case, a final result.
 
 ### microservices
 
-Microservices is fine grained abstractions.
+Microservices are fine grained abstractions.
 Each service should only care the logic it is responsible.
 Each service should make sure the ACID of transaction.
 Services are NOT ALLOWED TO CALL EACH OTHER.
