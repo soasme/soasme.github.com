@@ -85,7 +85,7 @@ $ make test
 busted src
 ●●●●●●●●●●●●●●●●
 16 successes / 0 failures / 0 errors / 0 pending : 0.005402 seconds
-{% highlight %}
+{% endhighlight %}
 
 ---
 
