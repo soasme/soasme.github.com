@@ -148,3 +148,7 @@ end
 - src/components: 放置绘制逻辑，具体来说，draw 函数根据全局的状态树渲染当前界面，根据监听的事件以及love2d定义的钩子调用 store.dispatch 用于触发事件。
 - src/reducers: 放置业务逻辑，具体来说，reducer 函数响应事件并生成新的状态。
 - src/store: 定义一颗全局状态树。
+
+运行情况：
+
+![](/images/2016/rpg-mind-palace-move-camera.gif)
