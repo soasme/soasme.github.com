@@ -173,7 +173,7 @@ API Gateway 对大量的服务进行调用，这对服务的全局依赖关系�
 ## 资料
 
 - 1. 知名公司的内部解决方案
-    - a) (知乎](~/space/mine/github/pages/_posts/technology/2016/2016-05-18-api-gateway.md)
+    - a) (知乎](http://www.infoq.com/cn/news/2014/12/zhihu-architecture-evolution)
     - b) Netflix
         - (1) [Netflix API Redesign(http://techblog.netflix.com/2012/07/embracing-differences-inside-netflix.html)
         - (2) [Netflix RxJava](http://techblog.netflix.com/2013/02/rxjava-netflix-api.html)
