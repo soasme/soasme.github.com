@@ -172,47 +172,47 @@ API Gateway 对大量的服务进行调用，这对服务的全局依赖关系�
 
 ## 资料
 
-- 1. 知名公司的内部解决方案
-    - a) (知乎](http://www.infoq.com/cn/news/2014/12/zhihu-architecture-evolution)
-    - b) Netflix
-        - (1) [Netflix API Redesign(http://techblog.netflix.com/2012/07/embracing-differences-inside-netflix.html)
-        - (2) [Netflix RxJava](http://techblog.netflix.com/2013/02/rxjava-netflix-api.html)
-        - (3) [Netflix 的 Api Gateway](http://www.chanpin100.com/archives/50391)
-        - (4) [柠檬叔的日记](https://www.douban.com/note/507823285/)
-        - (5) [构建微服务的基础框架](http://www.infoq.com/cn/articles/basis-frameworkto-implement-micro-service)
-    - c) [Uber building tincup](https://eng.uber.com/building-tincup/)
-    - d) [Evernote and thrift](https://blog.evernote.com/tech/2011/05/26/evernote-and-thrift/)
-    - e) 阿里
-        - (1) [阿里云 API Gateway](https://www.aliyun.com/product/apigateway)
-        - (2) [手淘后端架构 两层网关](http://www.infoq.com/cn/articles/taobao-mobile-terminal-access-gateway-infrastructure)
-- 2. 企业级解决方案
-    - a) [Amazon AWS Lambda](http://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started.html)
-        - (1) [Amazon AWS Lambda tutorial(auth0)](https://auth0.com/docs/integrations/aws-api-gateway/part-1)
-        - (2) [Amazon API Gateway](https://aws.amazon.com/cn/api-gateway/?nc1=h_ls)
-        - (3) [Amazon api gateway build and run scalable application backends](https://aws.amazon.com/cn/blogs/aws/amazon-api-gateway-build-and-run-scalable-application-backends/)
-        - (4) [Amazon API Gateway -  Build and Run Scalable Application Backends](https://aws.amazon.com/cn/blogs/aws/amazon-api-gateway-build-and-run-scalable-application-backends/)
-    - b) Sprint Cloud
-        - (1) [使用Spring Cloud和Docker构建微服务](http://dockone.io/article/510)
-        - (2) [Building REST APIs with Spring Boot and Spring Cloud](http://www.slideshare.net/KennyBastani/building-rest-apis-with-spring-boot-and-spring-cloud)
-        - (3) [Sprint Cloud API Gateway Suite](https://github.com/rohitghatol/spring-boot-microservices/tree/master/api-gateway)
-        - (4) Example: Spring Boot Template for Micro services Architecture - Show cases how to use Zuul for API Gateway, Spring OAuth 2.0 as Auth Server, Multiple Resource (Web Services) Servers, Angular Web App, Eureka dor registration and Discover and Hystrix for circuit breaker [Read more](https://github.com/rohitghatol/spring-boot-microservices/tree/master/api-gateway)
-    - c) [IBM bluemix](https://console.ng.bluemix.net/docs/services/APIManagement/index.html)
-    - d) [another IBM bluemix example](http://www.ibm.com/developerworks/library/se-publish-restapis-bluemix-trs/index.html )
-- 3. 以 API Management 为主营业务的 Startup 解决方案
-    - a) [akana](https://www.akana.com/solutions/api-gateway)
-    - b) [JustAPIs](http://devhub.justapis.com/docs/terminology)
-    - c) [Netscaler](https://www.citrix.com/content/dam/citrix/en_us/documents/products-solutions/netscaler-with-unified-gateway.pdf)
-    - d) [apigee](http://apigee.com/about/products/api-management)
-- 4. 其它解决方案
-    - a) [Awesome API gateways](https://github.com/mfornos/awesome-microservices#api-gateways--edge-services)
-- 5. 简介
-    - a) [Pattern: API Gateway Introduction](http://microservices.io/patterns/apigateway.html)
-    - b) [Nginx Building Microservices: Using an API Gateway](https://www.nginx.com/blog/building-microservices-using-an-api-gateway/)
-- 6. 实现
-    - a) [tortic](https://github.com/glibin/tortik)
-    - b) [tornado proxy api-gateway](https://github.com/restran/api-gateway)
-    - c) [Kong](https://getkong.org/)
-    - d) [StrongGateway](https://github.com/strongloop/strong-gateway)
-    - e) [如何容错](https://github.com/Netflix/Hystrix/wiki)
-    - f) [Tracing Tornado HTTP](https://github.com/bdarnell/tornado_tracing)
-    - g) [自带debug页查看所有请求的耗时](http://glibin.github.io/tortik/)
+1. 知名公司的内部解决方案
+  - [知乎](http://www.infoq.com/cn/news/2014/12/zhihu-architecture-evolution)
+  - Netflix
+    - (1) [Netflix API Redesign](http://techblog.netflix.com/2012/07/embracing-differences-inside-netflix.html)
+    - (2) [Netflix RxJava](http://techblog.netflix.com/2013/02/rxjava-netflix-api.html)
+    - (3) [Netflix 的 Api Gateway](http://www.chanpin100.com/archives/50391)
+    - (4) [柠檬叔的日记](https://www.douban.com/note/507823285/)
+    - (5) [构建微服务的基础框架](http://www.infoq.com/cn/articles/basis-frameworkto-implement-micro-service)
+  - [Uber building tincup](https://eng.uber.com/building-tincup/)
+  - [Evernote and thrift](https://blog.evernote.com/tech/2011/05/26/evernote-and-thrift/)
+  - 阿里
+    - (1) [阿里云 API Gateway](https://www.aliyun.com/product/apigateway)
+    - (2) [手淘后端架构 两层网关](http://www.infoq.com/cn/articles/taobao-mobile-terminal-access-gateway-infrastructure)
+2. 企业级解决方案
+  - [Amazon AWS Lambda](http://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started.html)
+    - (1) [Amazon AWS Lambda tutorial(auth0)](https://auth0.com/docs/integrations/aws-api-gateway/part-1)
+    - (2) [Amazon API Gateway](https://aws.amazon.com/cn/api-gateway/?nc1=h_ls)
+    - (3) [Amazon api gateway build and run scalable application backends](https://aws.amazon.com/cn/blogs/aws/amazon-api-gateway-build-and-run-scalable-application-backends/)
+    - (4) [Amazon API Gateway -  Build and Run Scalable Application Backends](https://aws.amazon.com/cn/blogs/aws/amazon-api-gateway-build-and-run-scalable-application-backends/)
+  - Sprint Cloud
+    - (1) [使用Spring Cloud和Docker构建微服务](http://dockone.io/article/510)
+    - (2) [Building REST APIs with Spring Boot and Spring Cloud](http://www.slideshare.net/KennyBastani/building-rest-apis-with-spring-boot-and-spring-cloud)
+    - (3) [Sprint Cloud API Gateway Suite](https://github.com/rohitghatol/spring-boot-microservices/tree/master/api-gateway)
+    - (4) Example: Spring Boot Template for Micro services Architecture - Show cases how to use Zuul for API Gateway, Spring OAuth 2.0 as Auth Server, Multiple Resource (Web Services) Servers, Angular Web App, Eureka dor registration and Discover and Hystrix for circuit breaker [Read more](https://github.com/rohitghatol/spring-boot-microservices/tree/master/api-gateway)
+  - [IBM bluemix](https://console.ng.bluemix.net/docs/services/APIManagement/index.html)
+  - [another IBM bluemix example](http://www.ibm.com/developerworks/library/se-publish-restapis-bluemix-trs/index.html )
+3. 以 API Management 为主营业务的 Startup 解决方案
+  - [akana](https://www.akana.com/solutions/api-gateway)
+  - [JustAPIs](http://devhub.justapis.com/docs/terminology)
+  - [Netscaler](https://www.citrix.com/content/dam/citrix/en_us/documents/products-solutions/netscaler-with-unified-gateway.pdf)
+  - [apigee](http://apigee.com/about/products/api-management)
+4. 其它解决方案
+  - [Awesome API gateways](https://github.com/mfornos/awesome-microservices#api-gateways--edge-services)
+5. 简介
+  - [Pattern: API Gateway Introduction](http://microservices.io/patterns/apigateway.html)
+  - [Nginx Building Microservices: Using an API Gateway](https://www.nginx.com/blog/building-microservices-using-an-api-gateway/)
+6. 实现
+  - [tortic](https://github.com/glibin/tortik)
+  - [tornado proxy api-gateway](https://github.com/restran/api-gateway)
+  - [Kong](https://getkong.org/)
+  - [StrongGateway](https://github.com/strongloop/strong-gateway)
+  - [如何容错](https://github.com/Netflix/Hystrix/wiki)
+  - [Tracing Tornado HTTP](https://github.com/bdarnell/tornado_tracing)
+  - [自带debug页查看所有请求的耗时](http://glibin.github.io/tortik/)
