@@ -7,11 +7,7 @@ title: API 网关
 ## 简介
 
 将单体应用服务化后，应用的逻辑委托给一至多个服务执行。
-以知乎的架构为例：
-
-![](/images/2016/zhihu-architecture.png)
-
-用户请求通过负载均衡组件转发到一个 WebN 的实例。
+以知乎的架构为例， 用户请求通过负载均衡组件转发到一个 WebN 的实例。
 Web01~WebN 在系统层次上可以认为是 API 网关层。
 它通过内部服务的负载均衡调用各种内部微服务。
 
@@ -164,8 +160,59 @@ API Gateway 对大量的服务进行调用，这对服务的全局依赖关系�
 近两年内，出现了大量以 API Management 为主营业务的创业公司。
 此类系统的设计应该会雨后春笋一样不断冒出来。
 
-上次在架构上的尝试其实算是失败的，调研与分析都不够充分，导致上线后也还不断发现很多不错的设计没能借鉴到。
-这次的尝试得到了来自老婆在思考方式上的指导，得到了来自哲叔的帮助，得到了来自同事的反馈意见，收获良多。
-业界很多成熟的实现，对我的帮助也很大。
+一个良好的 API Gateway 应该做到
 
-在接下来的一段时间里，我会以这个系统为最终目标，设计出几个 milestone 分步达到。
+- 开发迅速
+- 方便扩展
+- 容错
+
+上面的设计借鉴了业界很多成熟的实现。
+这次设计得到了老婆的大力帮助，收获良多。
+另外，哲叔和其它同事也给了不少意见。
+
+## 资料
+
+- 1. 知名公司的内部解决方案
+    - a) (知乎](~/space/mine/github/pages/_posts/technology/2016/2016-05-18-api-gateway.md)
+    - b) Netflix
+        - (1) [Netflix API Redesign(http://techblog.netflix.com/2012/07/embracing-differences-inside-netflix.html)
+        - (2) [Netflix RxJava](http://techblog.netflix.com/2013/02/rxjava-netflix-api.html)
+        - (3) [Netflix 的 Api Gateway](http://www.chanpin100.com/archives/50391)
+        - (4) [柠檬叔的日记](https://www.douban.com/note/507823285/)
+        - (5) [构建微服务的基础框架](http://www.infoq.com/cn/articles/basis-frameworkto-implement-micro-service)
+    - c) [Uber building tincup](https://eng.uber.com/building-tincup/)
+    - d) [Evernote and thrift](https://blog.evernote.com/tech/2011/05/26/evernote-and-thrift/)
+    - e) 阿里
+        - (1) [阿里云 API Gateway](https://www.aliyun.com/product/apigateway)
+        - (2) [手淘后端架构 两层网关](http://www.infoq.com/cn/articles/taobao-mobile-terminal-access-gateway-infrastructure)
+- 2. 企业级解决方案
+    - a) [Amazon AWS Lambda](http://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started.html)
+        - (1) [Amazon AWS Lambda tutorial(auth0)](https://auth0.com/docs/integrations/aws-api-gateway/part-1)
+        - (2) [Amazon API Gateway](https://aws.amazon.com/cn/api-gateway/?nc1=h_ls)
+        - (3) [Amazon api gateway build and run scalable application backends](https://aws.amazon.com/cn/blogs/aws/amazon-api-gateway-build-and-run-scalable-application-backends/)
+        - (4) [Amazon API Gateway -  Build and Run Scalable Application Backends](https://aws.amazon.com/cn/blogs/aws/amazon-api-gateway-build-and-run-scalable-application-backends/)
+    - b) Sprint Cloud
+        - (1) [使用Spring Cloud和Docker构建微服务](http://dockone.io/article/510)
+        - (2) [Building REST APIs with Spring Boot and Spring Cloud](http://www.slideshare.net/KennyBastani/building-rest-apis-with-spring-boot-and-spring-cloud)
+        - (3) [Sprint Cloud API Gateway Suite](https://github.com/rohitghatol/spring-boot-microservices/tree/master/api-gateway)
+        - (4) Example: Spring Boot Template for Micro services Architecture - Show cases how to use Zuul for API Gateway, Spring OAuth 2.0 as Auth Server, Multiple Resource (Web Services) Servers, Angular Web App, Eureka dor registration and Discover and Hystrix for circuit breaker [Read more](https://github.com/rohitghatol/spring-boot-microservices/tree/master/api-gateway)
+    - c) [IBM bluemix](https://console.ng.bluemix.net/docs/services/APIManagement/index.html)
+    - d) [another IBM bluemix example](http://www.ibm.com/developerworks/library/se-publish-restapis-bluemix-trs/index.html )
+- 3. 以 API Management 为主营业务的 Startup 解决方案
+    - a) [akana](https://www.akana.com/solutions/api-gateway)
+    - b) [JustAPIs](http://devhub.justapis.com/docs/terminology)
+    - c) [Netscaler](https://www.citrix.com/content/dam/citrix/en_us/documents/products-solutions/netscaler-with-unified-gateway.pdf)
+    - d) [apigee](http://apigee.com/about/products/api-management)
+- 4. 其它解决方案
+    - a) [Awesome API gateways](https://github.com/mfornos/awesome-microservices#api-gateways--edge-services)
+- 5. 简介
+    - a) [Pattern: API Gateway Introduction](http://microservices.io/patterns/apigateway.html)
+    - b) [Nginx Building Microservices: Using an API Gateway](https://www.nginx.com/blog/building-microservices-using-an-api-gateway/)
+- 6. 实现
+    - a) [tortic](https://github.com/glibin/tortik)
+    - b) [tornado proxy api-gateway](https://github.com/restran/api-gateway)
+    - c) [Kong](https://getkong.org/)
+    - d) [StrongGateway](https://github.com/strongloop/strong-gateway)
+    - e) [如何容错](https://github.com/Netflix/Hystrix/wiki)
+    - f) [Tracing Tornado HTTP](https://github.com/bdarnell/tornado_tracing)
+    - g) [自带debug页查看所有请求的耗时](http://glibin.github.io/tortik/)
