@@ -2,7 +2,7 @@
 layout: post
 category: life
 tag: gonz
-title: -117(序)
+title: 新希望, -117(序)
 ---
 
 耳机里散出一些年少时听的歌，下意识的往后看，
