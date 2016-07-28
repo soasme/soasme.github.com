@@ -36,12 +36,12 @@ title: Fis && Flask
       // replace js/img src
       reg = /<(script|img|style|embed)(.+?)src=["']?\s*?\/static\/([^"']+)\s*?["']?(.*?)>/g;
       var c = content.replace(reg, function(m, p1, p2, p3, p4, value) {
-        return "<" + p1 + p2 + 'src="{{ url_for(\'static\', filename=\'' + p3 +'\') }}"' + p4 + '>';
+        return "<" + p1 + p2 + 'src="\{\{ url_for(\'static\', filename=\'' + p3 +'\') \}\}"' + p4 + '>';
       });
       // replace css link
       reg2 = /<link(.+?)href=["']?\s*?\/static\/([^"']+)\s*?["']?(.*?)>/g;
       var d = c.replace(reg2, function(m, p1, p2, p3, value) {
-        return "<link" + p1 + 'href="{{ url_for(\'static\', filename=\'' + p2 +'\') }}"' + p3 + '>';
+        return "<link" + p1 + 'href="\{\{ url_for(\'static\', filename=\'' + p2 +'\') \}\}"' + p3 + '>';
       });
       return d;
     });
