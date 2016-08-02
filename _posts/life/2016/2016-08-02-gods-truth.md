@@ -1,3 +1,9 @@
+---
+layout: post
+category: life
+tag: diary
+title: 天经地义？
+---
 
 天经地义常被人们用来指绝对正确，不能改变的道理。
 它企图将作用域限定在广阔的空间里。
