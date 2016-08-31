@@ -1,18 +1,11 @@
-site:
-	rm -rf tag
-	rm -rf categories
-	jekyll build
-	rsync -vr --inplace --delete _site/tag/ tag
-	rsync -vr --inplace --delete _site/categories/ categories
-	git add categories
-	git add tag
-	git commit -m 'make site.'
-	@echo 'Success to build site'
+.DEFAULT_GOAL := serve
 
-commit_post:
-	git commit -m 'add new post'
-
-commit: site commit_post
+setup:
+	bundle install
 
 serve:
-	jekyll serve
+	bundle exec jekyll serve
+
+add:
+	git add _posts/*.md
+	git commit -m 'add new post'
