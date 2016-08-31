@@ -10,4 +10,10 @@ baseurl: "/"
 permalink: "/:year/:month/:day/:title"
 domain_name: "http://www.soasme.com"
 google_analytics: 'UA-36183732-1'
-gems: [jekyll-paginate]
+
+gems: 
+  - jekyll-paginate
+  - jekyll-feed
+
+feed:
+  path: feed/index.xml
