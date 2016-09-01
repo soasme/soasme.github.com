@@ -43,5 +43,5 @@ class CrawlService(scrapyd.resources.JsonResource):
 {% endhighlight %}
 
 上段时间写 Tornado 程序，被异步调用蹂躏了一番，这次很容易看出了问题。
-修复已经发版到了 pypi 上，最新版本: 0.1.6 。
+修复已经发版到了 pypi 上，最新版本: [0.1.6](https://pypi.python.org/pypi/scrapyd_kit)。
 应该不会再出现同步堵塞Event Loop的问题了.
