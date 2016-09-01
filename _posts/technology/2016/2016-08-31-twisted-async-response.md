@@ -31,6 +31,12 @@ class CrawlService(scrapyd.resources.JsonResource):
 {% highlight python %}
 class CrawlService(scrapyd.resources.JsonResource):
 
+    def DO_SOME_SYNC_OPERATION(self, request):
+        pipe = Popen(['scrapy', 'crawl', ...])
+        out, err = pipe.communicate()
+        request.write(out)
+        request.finish()
+
     def render_POST(self, request):
         reactor.callInThread(self.DO_SOME_SYNC_OPERATION, request)
         return server.NOT_DONE_YET
