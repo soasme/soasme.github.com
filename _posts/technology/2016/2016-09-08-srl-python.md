@@ -34,17 +34,16 @@ True
 False
 ```
 
-## 快速实现
+## 进度
+
+基本流程：
 
 - 使用 TDD 的方式，根据 PHP 项目的测试用例，快速构建起可用的 Builder
 - 补齐 simple regex 文档页提供的测试用例
 - 根据 Builder 写 Parser。
 - 完成开源项目的标准配置：文档，证书，发版，注释等。
 
-可针对 Python re 库的特性做一些小变动，但基本保持 API 与 SRL 库一致。
-测试可分为文档测试和单元测试。单元测试通过 [SRL] 的所有用例，文档测试参照 beanstalkc 的文档测试。
-
-## 进度
+时间表：
 
 - 1 Sep, 2016 编写了所有文档页提及的构建器方法，并通过了 srl 库对 builder 的所有单元测试用例
 - 2 Sep, 2016 继续完善 builder，使其通过了 [Simple Regex] Documentation 描述的所有特性，使用与 beanstalkc 测试类似的技术结合了文档和测试
