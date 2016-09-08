@@ -72,4 +72,4 @@ EOF
 [SRL]: https://github.com/SimpleRegex/SRL-PHP
 [Simple Regex]: https://simple-regex.org
 [soasme/SRL.py]: https://github.com/soasme/SRL.py
-[SimpleRegex/SRL-Python]: https://github.com/SimpleRegex/SRL-Python)
+[SimpleRegex/SRL-Python]: https://github.com/SimpleRegex/SRL-Python
