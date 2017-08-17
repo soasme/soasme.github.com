@@ -23,15 +23,15 @@ very little things. I'm not satisfied with the result at all. I failed to
 keep my enthusiasm long and strong. It's too often I jumped into another
 project before I finished it. Side-project is some kind of poison.
 Some people claim you could get great benefits from building side
-project. But I'm started to doubt that. I'd say it's like I'm wasting
-my effort doing something meaningless. One thing I could learn from
+project. But I started to doubt that. I'd say it's like I'm wasting
+my efforts doing something meaningless. One thing I could learn from
 it is probably the experience, which I would say it's much less than
 what I earned from work.
 
 The aha moment isn't too late for me I guess. Some years ago, my boss
 asked me if I'm rich, then what would I do? I answered him that I
 would stay at home, learning stuff and write book. I didn't realized
-that I've already pictured the ideal life. The condition here is not
+that I've already pictured my ideal life. The condition here is not
 that important at all. Even if I'm not rich, I could still run these
 things as well. So why not start now.
 
