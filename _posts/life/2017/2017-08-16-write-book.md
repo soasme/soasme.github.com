@@ -18,8 +18,8 @@ happy that my wife supports me at all time. For the next many many
 years, I don't have ability to foresee what's going on. But I'm for
 sure one thing that I will get close to the things I'm pursuing.
 
-For years, I spent a lot of time writing tons of shit code and produce
-very little things. I'm not satisfying the result at all. I failed to
+For years, I've spent a lot of time writing tons of shit codes and producing
+very little things. I'm not satisfied with the result at all. I failed to
 keep my enthusiasm long and strong. It's too often I jumped into another
 project before I finished it. Side-project is some kind of poison.
 Some people claim you could get great benefits from building side
