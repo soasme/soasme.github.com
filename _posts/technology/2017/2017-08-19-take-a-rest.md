@@ -59,4 +59,31 @@ Resume working after 60 seconds.
 
 函数调用`loop.time()`的返回值是类型为浮点数字的当前时间，它取决于事件循环的内部时钟。
 
+上述的代码其实隐含地包括了一段逻辑：执行一个函数，当调用结束时，停止事件循环。我们可以使用 `loop.run_until_complete` 函数简化它：
+
+```python
+#!/usr/bin/env python3
+
+import os
+import sys
+import asyncio
+
+REST_SECONDS = int(os.environ.get('REST_SECONDS') or 60)
+
+def report(left_time):
+    sys.stdout.write("Resume working after %d seconds. \r" % (left_time))
+    sys.stdout.flush()
+
+async def rest():
+    for left_time in range(REST_SECONDS, 0, -1):
+        report(left_time)
+        await asyncio.sleep(1)
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(rest())
+loop.close()
+```
+
+函数调用 `loop.run_until_complete(future)`  不像上面使用的 `loop.run_forever()` 一直执行下去，而是一直执行直到传入的 `future` 对象执行完毕。如果传入的是个协程对象，`asyncio` 会使用 `ensure_future()` 将这个协程对象转为 `future` 对象。
+
 我很喜欢这个小工具。为了更好地提示自己该休息了，我使用了一段 `bash` 主题的配置，它会按照我的休息时间提示我是否该休息了。有关这段主题配置的代码我放在了 gist 上，[前往阅读](https://gist.github.com/soasme/78e1d5e9854a8e66e69984a2692a72a0)。
