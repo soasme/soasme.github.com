@@ -9,7 +9,7 @@ title: tech shack
 
 http://github.com/soasme/techshack.io
 
-我想了下，按照自己这耐性，除了认真学习意外，别的事情真的很难干的动了。
+我想了下，按照自己这耐性，除了认真学习，别的事情真的很难干的动了。
 甚至堆代码这件事情都很不好说能坚持多久。
 比起写书，还是看书来的适合我。我就适合写写笔记神马的。
 
@@ -32,3 +32,5 @@ http://github.com/soasme/techshack.io
 感觉还蛮难的，这些只是我看完消化完，也要一个小时的样子呢。
 看了几天，明显觉得又收获好多新知识。
 希望坚持很久很久很久，自己的技术还能有更大的长进。
+
+电梯: [http://techshack.soasme.com/](http://techshack.soasme.com/)
