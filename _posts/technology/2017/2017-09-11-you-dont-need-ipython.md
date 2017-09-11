@@ -5,7 +5,6 @@ tag: python
 title: You don't need IPython
 ---
 
-# You don't need IPython
 
 For years, I kept listing IPython in `requirements.txt` for all my
 projects. I admitted that IPython is a great tool and encouraged people
