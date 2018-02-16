@@ -5,13 +5,6 @@ tags: poem
 title: 小镇
 ---
 
----
-layout: post
-category: life
-tags: poem
-title: 小镇
----
-
 在这个慵懒的小镇 有一家咖啡店
 
 跳跃的麻雀 抢着吃地上的面包碎片
