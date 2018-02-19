@@ -38,6 +38,6 @@ things as well. So why not start now.
 That's it. I'm writing a new book now. Normally I won't say things too
 early. But I think I'm walking on the right track now. I don't know
 how useful it will be. But for me myself, it has shown positive feedback
-now. When I started to explain things simple but correct, I found it
+now. When I started to explain things simple but accurate, I found it
 much harder than I thought. Without gaining a deep knowledge of one
 thing, I couldn't explain it well. That intrigues me to keep learning.
