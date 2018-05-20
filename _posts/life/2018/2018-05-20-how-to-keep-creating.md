@@ -60,6 +60,10 @@ title: HOW-TO KEEP CREATING
 
 不积跬步何以至千里；千里之行，始于足下。以此自勉。
 
+末了，打个广告：
+
+[Enqueue Zero](https://www.patreon.com/enqueuezero) 将会整理我这些年学过的技术，交叉对比写成一系列文章。 如果感兴趣，可以先加那个 $1/mo 的组，当然加入 $3/mo 那个组的好处就是会看到更多有意思的文章。还有一个好处是，你将会有更多和国外程序员直接交流的机会。欢迎加入这个错过会有点可惜的社区！（●´∀｀）ノ♡
+
 [1]: https://www.soasme.com/techshack.weekly/
 [2]: https://www.patreon.com/enqueuezero
 [3]: https://blog.patreon.com/30-creators-share-their-secrets-to-success/
