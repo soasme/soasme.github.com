@@ -4,8 +4,6 @@ title: Operation Deluxe - Ju’s 2019 Initiative
 category: diary
 ---
 
-# Operation Deluxe - Ju’s 2019 Initiative.
-
 2019 年过去了三周了，计划虽然在有序展开，但是感觉内容太多，有点 Hold 不住了。所以，打算引入 OKR 方法论，尝试管理剩下的 Q1 的进度。
 
 Objective 1: 探索 NZ
