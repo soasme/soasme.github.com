@@ -24,7 +24,9 @@ Second, I'm working on another project since the beginning of the month (Jan 201
 "Hands-On Cloud Native Application" will likely be the book title. It will serve as both a document and a memo on how I development, and release my Pomodoro application to the cloud. It has below chapters (draft):
 
 * [ ] Introduction
+
 Part I: Dev
+
 * [ ] Dev Introduction
 * [ ] Chapter 1. Understand the Business
 * [ ] Chapter 2. Run a Pomodoro Timer in React
@@ -35,15 +37,16 @@ Part I: Dev
 * [ ] Chapter 7. SQL Migration via Alembic
 * [ ] Chapter 8. Front-end & Backend-end Integration
 * [ ] Chapter 9. Spec for React App, Test for Flask App
+
 Part II: DevOps
-DevOps Introduction
+
+* [ ] DevOps Introduction
 * [ ] Chapter 10. Deploy to Heroku via Terraform
-* [ ] Chapter 11. Deploy to AWS Lambda via Terraform
-* [ ] Chapter 12. Continuous Integration via Travis
-* [ ] Chapter 13. Deploy to AWS ECS via Terraform
-* [ ] Chapter 14. Write a Helm Chart
+* [ ] Chapter 11. Continuous Integration via Travis
+* [ ] Chapter 12. Deploy to AWS EKS via Terraform
+* [ ] Chapter 13. Write a Helm Chart
 * [ ] Chapter 14. Deploy to Kubernetes(minikube/EKS/GKE/AKS) via Terraform
-* [ ] Chapter 15. Deploy to KNative
+
 Part III: Ops
 Ops Introduction
 * [ ] Chapter 15. Collect Metrics via Prometheus
