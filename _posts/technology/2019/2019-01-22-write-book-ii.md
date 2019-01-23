@@ -29,9 +29,9 @@ Part I: Dev
 
 * [ ] Dev Introduction
 * [ ] Chapter 1. Create the Environment by Docker
-* [ ] Chapter 2. Run a Pomodoro Timer in React
+* [ ] Chapter 2. Write a Pomodoro Timer by React
 * [ ] Chapter 3. Manage States by XState
-* [ ] Chapter 4. Mocking API by JSON-Server
+* [ ] Chapter 4. Write a Mocking API by JSON-Server
 * [ ] Chapter 5. Write a Real API by Flask and SQLAlchemy
 * [ ] Chapter 6. Sign in from GitHub by Authlib
 * [ ] Chapter 7. SQL Migration by Alembic
