@@ -23,3 +23,4 @@ category: diary
 | 看新书 | 速读 Computer Networking Problems and Solutions 至 Part II。精读到 Chapter 5 | |
 | 看新书 | 读完 Clean Architecture | |
 | 看新书 | 精读完 Introduction to Probability Models 第 1，2 章 | |
+| 活得久一点 | 每天完成至少 7min 锻炼 | |
