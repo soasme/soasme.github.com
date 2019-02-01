@@ -13,14 +13,14 @@ category: diary
 | 学习音乐理论 | musicthreory.net 所有篇目看过一遍，并能说出所有介绍过的概念。| |
 | 学习音乐理论 | 为 2 首歌编曲 | |
 | Concrete Architecture | 完成 Part I - Architecture Styles 的所有篇目 | |
-| Hands-on Cloud Native Application | 完成 5 个章节 | [preface](http://enqueuezero.com/hands-on-cloud-native/preface.html) |
-| Hands-on Cloud Native Application | 完成项目介绍页，推广到社区 | |
+| Hands-on Cloud Native Application | 完成 5 个章节 | [preface](http://enqueuezero.com/hands-on-cloud-native/preface.html), [landscape](https://enqueuezero.com/hands-on-cloud-native/the-landscape.html), [frontend](https://enqueuezero.com/hands-on-cloud-native/react.html), [terraform setup](https://enqueuezero.com/hands-on-cloud-native/terraform-setup.html), [heroku deployment](https://enqueuezero.com/hands-on-cloud-native/deploy-to-heroku.html), [CI setup](https://enqueuezero.com/hands-on-cloud-native/ci.html), [aws k8s](https://enqueuezero.com/hands-on-cloud-native/aws-k8s.html), [do k8s](https://enqueuezero.com/hands-on-cloud-native/do-k8s.html) |
+| Hands-on Cloud Native Application | 完成项目介绍页，推广到社区 | [index](https://enqueuezero.com/hands-on-cloud-native/) |
 | 上线番茄工具 | 测试覆盖率超过 80% | |
-| 上线番茄工具 | 完成生产环境的持续集成和持续部署 | |
-| 探索美食 | 制作 6 道全新的菜式 | |
+| 上线番茄工具 | 完成生产环境的持续集成和持续部署 | [ci](https://travis-ci.org/soasme/tomato-coffee), [docker image](https://hub.docker.com/r/soasme/tomato-coffee) |
+| 探索美食 | 制作 6 道全新的菜式 | Gurnard 番茄鱼汤，使用铸铁锅煎黑胡椒磨过的鸡胸肉，终于用上了 Saffron Threads 的 Seafood Paella |
 | 参与开源项目 | 为 2 个喜欢的项目改善文档和添加测试用例 | [authlib/pull/103](https://github.com/lepture/authlib/pull/103) |
-| 持续跟进社区最新动态 | 完成 12 期 Techshack 的中英文更新并推广到社区 | |
-| 看新书 | 速读 Computer Networking Problems and Solutions 至 Part II。精读到 Chapter 5 | |
-| 看新书 | 读完 Clean Architecture | |
+| 持续跟进社区最新动态 | 完成 12 期 Techshack 的中英文更新并推广到社区 | [index](https://enqueuezero.com/category/techshack.html) |
+| 看新书 | 速读 Computer Networking Problems and Solutions 至 Part II。精读到 Chapter 5 | 速读已经把首尾读过了，正在看 Part II |
+| 看新书 | 读完 Clean Architecture | done |
 | 看新书 | 精读完 Introduction to Probability Models 第 1，2 章 | |
-| 活得久一点 | 每天完成至少 7min 锻炼 | |
+| 活得久一点 | 每天完成至少 7min 锻炼 | 因为脚崴废了一周，其他周都有坚持 |
