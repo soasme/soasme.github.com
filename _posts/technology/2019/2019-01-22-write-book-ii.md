@@ -30,31 +30,34 @@ Part I: Dev
 * [ ] Dev Introduction
 * [ ] Chapter 1. Create the Environment by Docker
 * [ ] Chapter 2. Write a Pomodoro Timer by React
-* [ ] Chapter 3. Manage States by XState
-* [ ] Chapter 4. Write a Mocking API by JSON-Server
-* [ ] Chapter 5. Write a Real API by Flask and SQLAlchemy
-* [ ] Chapter 6. Sign in from GitHub by Authlib
-* [ ] Chapter 7. SQL Migration by Alembic
-* [ ] Chapter 8. Front-end & Backend-end Integration
-* [ ] Chapter 9. Test the application by Jest and Pytest
+* [ ] Chapter 3. Write a Mocking API by JSON-Server
+* [ ] Chapter 4. Write a Real API by Flask and SQLAlchemy
+* [ ] Chapter 5. Sign in from GitHub by Authlib
+* [ ] Chapter 6. SQL Migration by Alembic
+* [ ] Chapter 7. Front-end & Backend-end Integration
+* [ ] Chapter 8. Test the application by Jest and Pytest
 
 Part II: DevOps
 
 * [ ] DevOps Introduction
-* [ ] Chapter 10. Deploy to Heroku by Terraform
-* [ ] Chapter 11. Continuous Integration by Travis
-* [ ] Chapter 12. Deploy to AWS EKS by Terraform
+* [ ] Chapter 9. Deploy to Heroku by Terraform
+* [ ] Chapter 10. Continuous Integration by Travis
+* [ ] Chapter 11. Deploy to AWS EKS by Terraform
+* [ ] Chapter 12. Deploy to DigitalOcean by Terraform
 * [ ] Chapter 13. Prepare for deployment by Helm
-* [ ] Chapter 14. Deploy to Kubernetes(minikube/EKS/GKE/AKS) by Terraform
+* [ ] Chapter 14. Deploy to Kubernetes(minikube/EKS/DigitalOcean) by Terraform
+
 
 Part III: Ops
 Ops Introduction
-* [ ] Chapter 15. Collect Metrics by Prometheus
-* [ ] Chapter 16. Collect Logs by Fluentd
-* [ ] Chapter 17. Perform APM/Ping Check
-* [ ] Chapter 18. Perform Health Check by StatusPage
-* [ ] Chapter 19. Build a Monitoring Dashboard by Grafana
-* [ ] Chapter 20. Automate Toil Work by Python
+* [ ] Chapter 15. ChatOPS by Hubot
+* [ ] Chapter 16. Chaos Engineering
+* [ ] Chapter 17. Collect Metrics by Prometheus
+* [ ] Chapter 18. Collect Logs by Fluentd
+* [ ] Chapter 19. Perform APM/Ping Check
+* [ ] Chapter 20. Perform Health Check by StatusPage
+* [ ] Chapter 21. Build a Monitoring Dashboard by Grafana
+* [ ] Chapter 22. Automate Toil Work by Python
 * [ ] Summary
 
 ## Summary
