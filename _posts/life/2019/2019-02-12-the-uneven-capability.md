@@ -1,5 +1,5 @@
 ---
-layout: _post
+layout: post
 category: life
 tag: diary
 title: 失衡
