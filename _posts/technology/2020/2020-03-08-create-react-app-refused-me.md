@@ -4,8 +4,6 @@ layout: post
 category: technology
 ---
 
-CreateReactApp Refused Me
-
 Today, I  tried to open <https://create-react-app.dev> and look for some manual.
 But I hit the wall; I couldn't open it.
 The browser gave me the below error message:
