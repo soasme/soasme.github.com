@@ -15,3 +15,13 @@ NaN Tagging 巧妙的利用了 `x 也没什么意义`, 将剩下的空间用于�
 这个设计直接导致了：在更高的抽象维度上的数据类型，包括整形，浮点，布尔值，指针，均可被塞入一个 64 bits 的内存中。
 空间几乎全部利用了，不再需要额外定义 `struct Value { ... }`, 也不需要复杂的 box/unbox 即可做数字运算。
 效率杠杠。
+
+[这里]https://gist.github.com/apsun/46779ab1a8681822ccd4971f826272aa) 是一个 NaN Tagging 的小 demo，它的实现可以再完善一些，box_t 可以被定义为:
+
+```c
+typedef union {
+  uint64_t b64;
+  uint32_t b32[2];
+  double   d64;
+} box_t;
+```
