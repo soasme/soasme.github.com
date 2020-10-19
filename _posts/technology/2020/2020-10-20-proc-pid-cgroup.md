@@ -93,7 +93,7 @@ There are some caveats.
 
 Cgroups can be created in various ways. They can be even totally irrelevant to containers. The cgroups in the given example were created by Podman and systemd.
 
-For cgroups v1, one of the values for `controller_list` in the example is `name=systemd`, which seems bizarre. The `name=systemd` cgroup hierarchy is used by systemd to track services and user sessions. If you're wondering why there is a list of controllers, the answer is there are not any controllers; in cgroups v1, it is possible a cgroup hierarchy is mounted without attached controllers. It's purely for tracking processes.
+For cgroups v1, one of the values for `controller_list` in the example is `name=systemd`, which seems bizarre. The `name=systemd` cgroup hierarchy is used by systemd to track services and user sessions. If you're wondering why you don't see a list of controllers, the answer is there are not any controllers; in cgroups v1, it is possible a cgroup hierarchy is mounted without attached controllers. It's purely for tracking processes.
 
 For cgroups v2, `hiearchy_id` is always 0, and `controller_list` is always empty, as these two fields are no longer needed.
 
